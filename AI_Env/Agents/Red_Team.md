@@ -21,7 +21,7 @@ Goes in the definition:
 Stays out:
 
 - **The project's rules and known traps.** They come from the preloaded [guardrails-review](../Skills/Guardrails_Review.md) skill and the documents that skill names.
-- **Documentation review.** The red-team reads the documents to learn the rules; it does not review them or list stale docs. That belongs to the main session's stale-docs list and the historian (`Agents/Historian.md`).
+- **Documentation review.** The red-team reads the documents to learn the rules; it does not review them or list stale docs. That belongs to the main session's stale-docs list and the [historian](Historian.md).
 - **Decisions.** It recommends. What happens with each finding is triaged by the main session and decided by the owner, as described in [Working Agreements](../Context/Working_Agreements.md).
 
 ## When to use it, and when not to

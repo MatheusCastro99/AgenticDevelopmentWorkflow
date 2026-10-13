@@ -101,13 +101,13 @@ Runnable agent and skill definitions in `.claude/agents` and `.claude/skills` ar
 | Phase | Issue | Status |
 |---|---|---|
 | 1. Planning and scaffold | [#2](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/2) | Done |
-| 2. Workflow core | [#3](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/3) | Planned |
+| 2. Workflow core | [#3](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/3) | Done |
 | 3. Agents | [#4](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/4) | Planned |
 | 4. Skills | [#5](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/5) | Planned |
 | 5. Context templates | [#6](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/6) | Planned |
 | 6. Examples | [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7) | Planned |
 
-Today the repository holds its own documents in `Docs/`. `AI_Env/`, `Templates/` and `Examples/` arrive with phases 2 to 6.
+Today the repository holds its own documents in `Docs/` and the workflow core: the context index, the `Development_Workflow`, `Working_Agreements` and `DataFlow` pages, and the stale-docs list template. The rest of `AI_Env/` and `Templates/`, and all of `Examples/`, arrive with phases 3 to 6.
 
 Details are in the [Project Roadmap](Project_Roadmap.md).
 

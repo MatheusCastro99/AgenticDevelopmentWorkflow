@@ -18,7 +18,7 @@ Goes in:
 Stays out:
 
 - Anything that has its own document. Link to it; do not repeat it, or the two copies drift apart.
-- Rules about how the agent behaves in the repository. They are in the agent's guidance file.
+- Rules about how the main session behaves in the repository. They are in the agent's guidance file.
 - The state of the current issue. That lives in the issue.
 
 ## The index

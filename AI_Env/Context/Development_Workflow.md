@@ -4,7 +4,7 @@
 
 It lists the stages every issue goes through, in order, from gathering information to the memory flush. For each stage it says what happens, who acts, what is produced, and what the owner approves before the next stage starts.
 
-The agent reads it so that it never has to guess what comes next, and so that it stops where the owner expects it to stop.
+The main session reads it so that it never has to guess what comes next, and so that it stops where the owner expects it to stop.
 
 ## What goes in it, and what stays out
 
@@ -25,7 +25,7 @@ Stays out:
 ## Rules for every stage
 
 - Do not jump a stage. Every open decision is settled before the sub-phase plan, and that plan before the implementation plans.
-- The agent says which stage the work is in whenever it reports.
+- The main session says which stage the work is in whenever it reports.
 - A stage ends with a report to the owner. The next one starts when the owner says so.
 - A scope change at any stage goes into the issue before it goes into the work.
 - One issue, one branch, one pull request. When planning spans several issues, the planning documents get their own small pull request, merged before the first issue starts.
@@ -50,92 +50,92 @@ Stays out:
 
 ### 1. Gather all relevant information
 
-- **What happens:** the agent reads the issue and its comments, the context documents, and the parts of the project the issue touches. It checks the facts the issue states against the project as it is today.
-- **Who acts:** the agent.
+- **What happens:** the main session reads the issue and its comments, the context documents, and the parts of the project the issue touches. It checks the facts the issue states against the project as it is today.
+- **Who acts:** the main session.
 - **Produces:** a summary of what was found, any fact in the issue that turned out wrong, and the list of open decisions.
 - **Approved before the next stage:** the owner confirms the summary, or corrects it.
 
 ### 2. Settle open questions and decisions
 
-- **What happens:** the agent presents each open decision as options with a recommendation, as described in [Working Agreements](Working_Agreements.md). The owner decides.
-- **Who acts:** the agent recommends; the owner decides.
+- **What happens:** the main session presents each open decision as options with a recommendation, as described in [Working Agreements](Working_Agreements.md). The owner decides.
+- **Who acts:** the main session recommends; the owner decides.
 - **Produces:** the decided scope. Directional decisions are posted as a comment on the issue.
 - **Approved before the next stage:** every open decision is settled, and the owner has approved the comment before it is posted.
 
 ### 3. Plan the issue's sub-phases
 
-- **What happens:** the agent splits the issue into phases small enough to review one at a time, and gives their order and the reason for it.
-- **Who acts:** the agent.
+- **What happens:** the main session splits the issue into phases small enough to review one at a time, and gives their order and the reason for it.
+- **Who acts:** the main session.
 - **Produces:** the phase list, one commit per phase.
 - **Approved before the next stage:** the owner approves the phase list, or reorders it.
 
 ### 4. Plan the implementation of each phase
 
-- **What happens:** for each phase, the agent says which files change, how, and how the result will be verified.
-- **Who acts:** the agent.
+- **What happens:** for each phase, the main session says which files change, how, and how the result will be verified.
+- **Who acts:** the main session.
 - **Produces:** an implementation plan per phase.
 - **Approved before the next stage:** the owner approves the plan for a phase before that phase is implemented.
 
 ### 5. Implement
 
-- **What happens:** the agent implements one phase and reports it: what changed, which files, how it was verified. When a change makes a document untrue, the agent adds an entry to the stale-docs list at that moment.
-- **Who acts:** the agent.
+- **What happens:** the main session implements one phase and reports it: what changed, which files, how it was verified. When a change makes a document untrue, the main session adds an entry to the stale-docs list at that moment. The list is kept in an ignored file when the work spans several sessions, and in the session when the issue is finished in one sitting.
+- **Who acts:** the main session.
 - **Produces:** one commit per approved phase, and the running stale-docs list ([template](../../Templates/stale-docs.md)).
-- **Approved before the next stage:** the owner approves each phase before the agent commits it and starts the next one.
+- **Approved before the next stage:** the owner approves each phase before the main session commits it and starts the next one.
 
 ### 6. Test and refine
 
-- **What happens:** the agent runs the project's builds, tests and checks, and fixes what they show. The owner verifies the change their own way.
-- **Who acts:** the agent and the owner.
+- **What happens:** the main session runs the project's builds, tests and checks, and fixes what they show. The owner verifies the change their own way.
+- **Who acts:** the main session and the owner.
 - **Produces:** the verification results, and commits for anything refined.
 - **Approved before the next stage:** the owner is satisfied the change works.
 
 ### 7. Open a pull request
 
-- **What happens:** the agent pushes the branch and opens a pull request that links the issue.
-- **Who acts:** the agent, after the owner confirms each action.
+- **What happens:** the main session pushes the branch and opens a pull request that links the issue.
+- **Who acts:** the main session, after the owner confirms each action.
 - **Produces:** the pull request.
 - **Approved before the next stage:** the push and the pull request are each confirmed before they happen.
 
 ### 8. Monitor CI and comments
 
-- **What happens:** the agent watches the CI runs and the review comments, including those from automated reviewers, and triages each comment as described in [Working Agreements](Working_Agreements.md).
-- **Who acts:** the agent.
+- **What happens:** the main session watches the CI runs and the review comments, including those from automated reviewers, and triages each comment as described in [Working Agreements](Working_Agreements.md).
+- **Who acts:** the main session.
 - **Produces:** the CI result, and for each comment a recommendation to fix or decline.
 - **Approved before the next stage:** the owner decides what happens with each comment.
 
 ### 9. Last pass and red-team scan
 
-- **What happens:** the agent reads the whole change once more against the issue and its acceptance criteria. It then briefs the red-team subagent with the goal, the target and the constraints. The red-team reviews the change with no knowledge of the session and returns scored findings. The agent triages them.
-- **Who acts:** the agent and the red-team subagent.
-- **Produces:** the red-team's findings, each with the agent's recommendation to fix or decline.
-- **Approved before the next stage:** the owner decides what happens with each finding. If the agent proposes skipping the scan for a small mechanical change, the owner approves the skip.
+- **What happens:** the main session reads the whole change once more against the issue and its acceptance criteria. It then briefs the red-team subagent with the goal, the target and the constraints. The red-team reviews the change with no knowledge of the session and returns scored findings. The main session triages them.
+- **Who acts:** the main session and the red-team subagent.
+- **Produces:** the red-team's findings, each with the main session's recommendation to fix or decline.
+- **Approved before the next stage:** the owner decides what happens with each finding. If the main session proposes skipping the scan for a small mechanical change, the owner approves the skip, unless the owner has delegated that judgment (Working Agreements, "Who decides", rule 9).
 
 ### 10. Fix comments and findings
 
-- **What happens:** the agent makes the fixes the owner approved in stages 8 and 9, and answers the review comments. A fix that changes much goes back to the red-team; the same change is reviewed at most twice.
-- **Who acts:** the agent.
+- **What happens:** the main session makes the fixes the owner approved in stages 8 and 9, and answers the review comments. A fix that changes much goes back to the red-team; the same change is reviewed at most twice.
+- **Who acts:** the main session.
 - **Produces:** the fix commits, and replies to the comments.
 - **Approved before the next stage:** the owner approves the fixes before they are committed and pushed.
 
 ### 11. Historian doc pass
 
-- **What happens:** once the change is final, the agent briefs the historian subagent with the stale-docs list. The historian checks each entry against the repository, applies the listed entries, and reports anything else it finds without editing it. The owner reviews its diff against the list and the change.
-- **Who acts:** the agent, the historian subagent and the owner.
-- **Produces:** the historian's report, and one documentation commit made by the agent after the review.
+- **What happens:** once the change is final, the main session briefs the historian subagent with the stale-docs list. The historian checks each entry against the repository, applies the listed entries, and reports anything else it finds without editing it. The owner reviews its diff against the list and the change.
+- **Who acts:** the main session, the historian subagent and the owner.
+- **Produces:** the historian's report, and one documentation commit made by the main session after the review.
 - **Approved before the next stage:** the owner approves the documentation diff and decides on each finding beyond the list.
 
 ### 12. Ready to merge
 
-- **What happens:** the agent confirms that CI passes, every comment and finding is closed, and every acceptance criterion is met, and says so.
-- **Who acts:** the agent reports; the owner merges.
+- **What happens:** the main session confirms that CI passes, every comment and finding is closed, and every acceptance criterion is met, and says so.
+- **Who acts:** the main session reports; the owner merges.
 - **Produces:** the merged pull request and the closed issue.
 - **Approved before the next stage:** the merge itself is the owner's approval.
 
 ### 13. Memory flush
 
-- **What happens:** the agent goes through its persistent notes and the session's scratch files, and lists each as delete, condense or keep. Notes on finished work are condensed to the outcome, the deferred follow-ups and the lasting lessons.
-- **Who acts:** the agent.
+- **What happens:** the main session goes through its persistent notes and the session's scratch files, and lists each as delete, condense or keep. Notes on finished work are condensed to the outcome, the deferred follow-ups and the lasting lessons.
+- **Who acts:** the main session.
 - **Produces:** a shorter set of notes for the next session to start from.
 - **Approved before the next stage:** the owner approves the list before anything is deleted or changed.
 
@@ -152,24 +152,24 @@ flowchart TD
     LIST[/"Stale-docs list"/]
     PR[/"Pull request"/]
     DOCS[/"Project documentation"/]
-    NOTES[/"Agent's persistent notes"/]
+    NOTES[/"Persistent notes"/]
 
     RT(["red-team subagent"])
     HI(["historian subagent"])
 
-    S1["1. Gather all relevant information"]
-    S2["2. Settle open questions and decisions"]
-    S3["3. Plan the issue's sub-phases"]
-    S4["4. Plan the implementation of each phase"]
-    S5["5. Implement"]
-    S6["6. Test and refine"]
-    S7["7. Open a pull request"]
-    S8["8. Monitor CI and comments"]
-    S9["9. Last pass and red-team scan"]
-    S10["10. Fix comments and findings"]
-    S11["11. Historian doc pass"]
-    S12["12. Ready to merge"]
-    S13["13. Memory flush"]
+    S1["1 · Gather all relevant information"]
+    S2["2 · Settle open questions and decisions"]
+    S3["3 · Plan the issue's sub-phases"]
+    S4["4 · Plan the implementation of each phase"]
+    S5["5 · Implement"]
+    S6["6 · Test and refine"]
+    S7["7 · Open a pull request"]
+    S8["8 · Monitor CI and comments"]
+    S9["9 · Last pass and red-team scan"]
+    S10["10 · Fix comments and findings"]
+    S11["11 · Historian doc pass"]
+    S12["12 · Ready to merge"]
+    S13["13 · Memory flush"]
 
     ISSUE --> S1
     CTX --> S1
@@ -215,7 +215,7 @@ Every issue goes through these stages, in order.
 
 ### <n>. <Stage name>
 - **What happens:** <…>
-- **Who acts:** <agent | owner | subagent name>
+- **Who acts:** <main session | owner | subagent name>
 - **Produces:** <…>
 - **Approved before the next stage:** <…>
 

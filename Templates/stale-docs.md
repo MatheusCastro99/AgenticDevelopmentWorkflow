@@ -20,6 +20,13 @@ The entry format is the same either way.
 
 The main session's running list of project documentation that a change has made stale.
 
+The list has two possible homes, and the entry format is the same in both:
+
+- **An ignored file** (this one), when the work spans several sessions or you want to keep the cross-check log under Closed.
+- **The session itself,** with the entries handed over in chat or in the pull request body, when the issue is finished in one sitting.
+
+How it is used:
+
 - Add an entry at the moment a change makes a document untrue, not at the end of the issue.
 - Before the merge, the open entries for the pull request are the historian's brief.
 - The historian's report is a cross-check of this list:
@@ -33,7 +40,7 @@ The main session's running list of project documentation that a change has made 
 
 | Part | What to write |
 |---|---|
-| ID | `D1`, `D2`, … numbered per pull request |
+| ID | `D1`, `D2`, … numbered per pull request; `P1`, `P2`, … for entries under Already existed |
 | File and location | The path, with a section heading or line range |
 | What's stale | What the document says now, and why it is wrong |
 | What it should say | Suggested text, or the facts to state |

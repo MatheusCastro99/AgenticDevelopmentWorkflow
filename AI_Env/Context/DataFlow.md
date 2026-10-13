@@ -4,7 +4,7 @@
 
 It shows how data moves through the project: from the component where the user acts, to the endpoint that handles the request, to storage, and back to what the user sees. It shows the error and failsafe routes as well as the successful one.
 
-The agent reads it before changing anything on that path, so that it knows every hop a change touches and does not add a second route beside the one that exists.
+The main session reads it before changing anything on that path, so that it knows every hop a change touches and does not add a second route beside the one that exists.
 
 ## What goes in it, and what stays out
 
@@ -27,7 +27,7 @@ Stays out:
 
 Copy the page outline and the diagram, give each diagram the name of its action, and replace every word in capitals. Add or remove hops until the diagram matches the path in the project: a project with no server has no endpoint, and its path runs from the component to a service to storage.
 
-Placeholders: `DATE`, `ACTION`, `COMPONENT`, `CLIENT CHECK`, `API CLIENT`, `ENDPOINT`, `SERVER CHECK`, `HANDLER`, `STORAGE`, and the messages the user can end on.
+Placeholders: `DATE`, `ACTION`, `COMPONENT`, `CLIENT CHECK`, `API CLIENT`, `ENDPOINT`, `SERVER CHECK`, `HANDLER`, `STORAGE`, the messages the user can end on, and the text in angle brackets in the outline.
 
 The page outline:
 

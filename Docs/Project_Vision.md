@@ -17,9 +17,9 @@ This repository pulls it out into one place, so that:
 
 ## What the approach is
 
-- The owner decides. Agent recommendations comes with trade-offs, and says so explicitly when the path looks sub-optimal.
+- The owner decides. Agent recommendations come with trade-offs, and the agent says so explicitly when the path looks sub-optimal.
 - Context is written down. The agent loads the project's own documents before it plans or edits anything.
-- Decisions are authorative standing rules. A reviewer can check a change against them.
+- Decisions are authoritative standing rules. A reviewer can check a change against them.
 - Every issue goes through the same stages, in order, and each stage is approved before the next one starts.
 - Review is independent. A subagent with no stake in the change and no biased context tries to break it and give an adversarial review before the owner sees it.
 - Documentation is part of the change. What a change makes stale is tracked while it happens on a running list and fixed before the merge.

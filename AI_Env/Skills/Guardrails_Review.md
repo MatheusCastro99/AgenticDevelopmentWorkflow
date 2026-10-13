@@ -22,7 +22,7 @@ Stays out:
 
 - **The rules themselves.** A skill holds procedure, not project truth. The rules live in the decisions file and the other context documents; the skill tells its reader to load them. When a check and a document disagree, the document wins and the skill gets fixed.
 - **Authority.** The skill recommends; the owner decides, including the status of a standing rule.
-- The scoring of the independent review. The red-team agent has its own, described in `Agents/Red_Team.md` (#4).
+- The scoring of the independent review. The red-team agent has its own, described in [Red Team](../Agents/Red_Team.md).
 
 ## When to use it
 

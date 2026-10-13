@@ -51,6 +51,10 @@ AgenticDevelopmentWorkflow/
 ├── .claude/
 │   └── CLAUDE.md
 │
+├── .github/
+│   └── workflows/
+│       └── link-check.yml
+│
 ├── Docs/
 │   ├── README.md
 │   ├── Project_Vision.md
@@ -96,7 +100,7 @@ Runnable agent and skill definitions in `.claude/agents` and `.claude/skills` ar
 
 | Phase | Issue | Status |
 |---|---|---|
-| 1. Planning and scaffold | [#2](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/2) | In progress |
+| 1. Planning and scaffold | [#2](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/2) | Done |
 | 2. Workflow core | [#3](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/3) | Planned |
 | 3. Agents | [#4](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/4) | Planned |
 | 4. Skills | [#5](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/5) | Planned |

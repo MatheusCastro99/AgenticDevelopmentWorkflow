@@ -1,10 +1,10 @@
 # Project Roadmap
 
-## Epic: [#1](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/1).
+## Epic: [#1](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/1)
 
 - One issue and one pull request per phase, worked in this order.
 
-## Phase 1: Planning and scaffold (#2): IN PROGRESS
+## Phase 1: Planning and scaffold (#2): CONCLUDED
 
 - `.gitignore` and MIT `LICENSE`
 - This repository's own documents: README, Project Vision, Project Roadmap, PRD

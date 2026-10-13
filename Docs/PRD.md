@@ -43,6 +43,9 @@ AgenticDevelopmentWorkflow/
 │   ├── CLAUDE.md - Guidance for Claude Code in this repository (tracked)
 │   ├── agents/ - This repository's own runnable agents (gitignored)
 │   └── skills/ - This repository's own runnable skills (gitignored)
+├── .github/
+│   └── workflows/
+│       └── link-check.yml - Link check on pull requests and pushes to main
 ├── Docs/
 │   ├── README.md - Repository overview
 │   ├── Project_Vision.md - What the kit is and is not

@@ -1,0 +1,11 @@
+# Claude Code personal tooling: runnable agent and skill definitions.
+# Their documentation lives in AI_Env/, and copy-ready versions in Templates/.
+.claude/agents/
+.claude/skills/
+.claude/settings.local.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vs/
+.vscode/

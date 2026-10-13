@@ -90,13 +90,14 @@ Both projects run the same agent with the same settings, process, scoring and li
 
 | | BabyBuddyHelper | InvoiceMe |
 |---|---|---|
+| When it runs | Before a large or risky pull request is handed to the owner | At step 9 of the issue workflow, as the last pass before the pull request goes to the owner |
 | Stale docs | Documentation is read-only reference. The report has no section for it. | The report ends with "Docs made stale", which feeds the stale-docs list |
 | Probe scripts | Not mentioned | It may write throwaway probe scripts, only in the operating system's temporary directory |
 | Results section | Build | Verification: the commands run and their results |
 
 BabyBuddyHelper's red-team also reported stale docs at first. That was removed because it is the historian's job. InvoiceMe's definition was adapted before that change, and its documentation records no reason for keeping the section.
 
-The template follows BabyBuddyHelper on the first two rows, and names its results section "Build and tests".
+On the first row the kit follows InvoiceMe: the scan has a fixed place at stage 9, and skipping it for a small change is a judgment the owner makes or delegates. On stale docs and probe scripts the template follows BabyBuddyHelper. It names its results section "Build and tests".
 
 ## Skeleton
 

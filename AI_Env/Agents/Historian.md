@@ -94,7 +94,7 @@ InvoiceMe's historian was adapted from BabyBuddyHelper's. Its documentation reco
 |---|---|---|
 | Beyond the list | Reports it and waits for the owner | Fixes what it can verify. Reports what it cannot verify, what is outside its scope, and anything where the wording is a judgment call. |
 | Decisions file | May correct a listed factual detail. Never changes status, adds, removes or renumbers. | Never writes it, not even a factual correction. Reports rule text the change made untrue. |
-| Report | Applied, not applied, found beyond the list, rule drafts, files touched | The same, opened by a map from each change in the diff to the doc update it caused, or to "no doc impact" |
+| Report | Applied, not applied, found beyond the list, rule drafts, files touched | Opens with a map from each change in the diff to the doc update it caused, or to "no doc impact". Lists what it fixed beyond the list in place of what it found, and adds the stale code comments it hands back to the main session. |
 | Deleting a section | Only when the list says so | Also when what the section documents no longer exists; every deletion is reported |
 
 The template follows BabyBuddyHelper on all four rows. From InvoiceMe it takes one thing: the sweep also checks the decisions file against the change, and reports what it finds.

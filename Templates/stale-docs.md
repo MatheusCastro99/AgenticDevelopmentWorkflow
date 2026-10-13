@@ -22,7 +22,7 @@ The main session's running list of project documentation that a change has made 
 
 The list has two possible homes, and the entry format is the same in both:
 
-- **An ignored file** (this one), when the work spans several sessions or you want to keep the cross-check log under Closed.
+- **A file kept out of version control** (this one), when the work spans several sessions or you want to keep the cross-check log under Closed.
 - **The session itself,** with the entries handed over in chat or in the pull request body, when the issue is finished in one sitting.
 
 How it is used:

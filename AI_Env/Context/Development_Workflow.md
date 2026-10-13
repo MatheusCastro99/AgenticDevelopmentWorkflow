@@ -4,7 +4,7 @@
 
 It lists the stages every issue goes through, in order, from gathering information to the memory flush. For each stage it says what happens, who acts, what is produced, and what the owner approves before the next stage starts.
 
-The main session reads it so that it never has to guess what comes next, and so that it stops where the owner expects it to stop.
+The main session (the agent the owner talks to, as opposed to the subagents it briefs) reads it so that it never has to guess what comes next, and so that it stops where the owner expects it to stop.
 
 ## What goes in it, and what stays out
 
@@ -78,7 +78,7 @@ Stays out:
 
 ### 5. Implement
 
-- **What happens:** the main session implements one phase and reports it: what changed, which files, how it was verified. When a change makes a document untrue, the main session adds an entry to the stale-docs list at that moment. The list is kept in an ignored file when the work spans several sessions, and in the session when the issue is finished in one sitting.
+- **What happens:** the main session implements one phase and reports it: what changed, which files, how it was verified. When a change makes a document untrue, the main session adds an entry to the stale-docs list at that moment. The list lives in a file kept out of version control when the work spans several sessions, and in the session when the issue is finished in one sitting.
 - **Who acts:** the main session.
 - **Produces:** one commit per approved phase, and the running stale-docs list ([template](../../Templates/stale-docs.md)).
 - **Approved before the next stage:** the owner approves each phase before the main session commits it and starts the next one.
@@ -109,7 +109,7 @@ Stays out:
 - **What happens:** the main session reads the whole change once more against the issue and its acceptance criteria. It then briefs the red-team subagent with the goal, the target and the constraints. The red-team reviews the change with no knowledge of the session and returns scored findings. The main session triages them.
 - **Who acts:** the main session and the red-team subagent.
 - **Produces:** the red-team's findings, each with the main session's recommendation to fix or decline.
-- **Approved before the next stage:** the owner decides what happens with each finding. If the main session proposes skipping the scan for a small mechanical change, the owner approves the skip, unless the owner has delegated that judgment (Working Agreements, "Who decides", rule 9).
+- **Approved before the next stage:** the owner decides what happens with each finding. If the main session proposes skipping the scan for a small mechanical change, the owner approves the skip, unless the owner has delegated that judgment ([Working Agreements](Working_Agreements.md), "Who decides", rule 9).
 
 ### 10. Fix comments and findings
 

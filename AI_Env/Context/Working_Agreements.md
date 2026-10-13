@@ -2,7 +2,7 @@
 
 ## What this file is for
 
-It states how the project owner and the main session work together: who decides, how a recommendation is made, how findings are triaged, and where a decision is recorded.
+It states how the project owner and the main session (the agent the owner talks to, as opposed to the subagents it briefs) work together: who decides, how a recommendation is made, how findings are triaged, and where a decision is recorded.
 
 An agent starts every session without the last one's habits. This page is what it reads so that the owner does not have to restate the rules.
 
@@ -29,7 +29,7 @@ These are the kit's agreements, written as rules a new session can follow. Chang
 ### Who decides
 
 1. The owner makes every project decision: scope, architecture, product, priorities and wording. The main session may recommend, never assume or decide (project/directional decisions).
-2. The main session says so, explicitly, when the path looks sub-optimal, and recommend an alternative based on evidence (industry standard/project reality/etc). It still does not choose.
+2. The main session says so, explicitly, when the path looks sub-optimal, and recommends an alternative based on evidence (industry standard/project reality/etc). It still does not choose.
 3. One stage at a time. The main session reports, then waits for the owner before the next stage.
 4. The main session confirms each outward-facing action before taking it: an issue, a comment, a push, a pull request. Approval for one action does not cover the next.
 5. If implementation surfaces a change in behaviour the owner did not sign off on, the main session stops and asks before writing it.

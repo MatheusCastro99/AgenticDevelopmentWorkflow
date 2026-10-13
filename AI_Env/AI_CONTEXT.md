@@ -51,13 +51,13 @@ This is the index of this kit. Pages that arrive with a later phase are named in
 | [Red Team](Agents/Red_Team.md) | Why is there an independent reviewer, and how is it configured and briefed? |
 | [Historian](Agents/Historian.md) | Why is there a documentation updater, and how is it configured and briefed? |
 | [Guardrails Review](Skills/Guardrails_Review.md) | What does the project review checklist check? |
-| `Skills/UX_Design.md` (#5) | What does the interface and copy review check? |
+| [UX Design](Skills/UX_Design.md) | What does the interface and copy review check? |
 
 ### Templates and examples
 
 - [Stale-docs list](../Templates/stale-docs.md): the running list a change keeps for the documentation pass
 - Copy-ready agent definitions: [red-team](../Templates/agents/red-team.md), [historian](../Templates/agents/historian.md)
-- Copy-ready skills: [guardrails-review](../Templates/skills/guardrails-review/SKILL.md)
+- Copy-ready skills: [guardrails-review](../Templates/skills/guardrails-review/SKILL.md), [ux-design](../Templates/skills/ux-design/SKILL.md)
 - `Examples/` (#7): the same pieces as filled in on BabyBuddyHelper and InvoiceMe
 
 ## Skeleton

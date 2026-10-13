@@ -196,8 +196,8 @@ What each subagent receives and returns:
 
 | Subagent | Runs at | Receives | Returns |
 |---|---|---|---|
-| red-team | Stage 9, on the finished change | The goal (the issue and its decided scope), the target (branch, commit range or pull request), the constraints (what is out of scope), and prior findings on a re-review | A verdict and scored findings, each with evidence. It edits nothing. |
-| historian | Stage 11, once the change is final | The target, the stale-docs list, and the owner's notes on entries already rejected or changed | Edits for the listed entries, and a report: what it applied, what it did not apply and why, and what it found beyond the list. It edits nothing beyond the list and never commits. |
+| red-team | Stage 9, on the finished change | The goal (the issue and its decided scope), the target (branch, commit range, pull request or design document), the constraints (what is out of scope), and prior findings on a re-review | A verdict and scored findings, each with evidence. It edits nothing. |
+| historian | Stage 11, once the change is final | The target, the stale-docs list, any rule candidates, and the owner's notes on entries already rejected or changed | Edits for the listed entries, and a report: what it applied, what it did not apply and why, and what it found beyond the list. It edits nothing beyond the list and never commits. |
 
 ## Skeleton
 

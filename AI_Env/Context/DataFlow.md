@@ -25,16 +25,26 @@ Stays out:
 
 ## Skeleton
 
-Copy the block, give each diagram the name of its action, and replace every word in capitals. Add or remove hops until the diagram matches the path in the project: a project with no server has no endpoint, and its path runs from the component to a service to storage.
+Copy the page outline and the diagram, give each diagram the name of its action, and replace every word in capitals. Add or remove hops until the diagram matches the path in the project: a project with no server has no endpoint, and its path runs from the component to a service to storage.
 
-Placeholders: `ACTION`, `COMPONENT`, `CLIENT CHECK`, `API CLIENT`, `ENDPOINT`, `SERVER CHECK`, `HANDLER`, `STORAGE`, and the four messages the user can end on.
+Placeholders: `DATE`, `ACTION`, `COMPONENT`, `CLIENT CHECK`, `API CLIENT`, `ENDPOINT`, `SERVER CHECK`, `HANDLER`, `STORAGE`, and the messages the user can end on.
 
-````markdown
+The page outline:
+
+```markdown
 # Data Flow
 
 Last updated: DATE
 
 ## ACTION
+
+<the diagram for this action>
+
+Notes:
+- <Anything the diagram cannot show: a retry limit, a cache that is updated, a rule about ordering.>
+```
+
+The diagram for one action. It is drawn here; its source is the `mermaid` block at this place in the file.
 
 ```mermaid
 flowchart TD
@@ -53,10 +63,6 @@ flowchart TD
     G1 --> J["COMPONENT<br/>says the action failed<br/>and offers a retry"]
     H --> K["COMPONENT<br/>shows the result"]
 ```
-
-Notes:
-- <Anything the diagram cannot show: a retry limit, a cache that is updated, a rule about ordering.>
-````
 
 ## Examples
 

@@ -1,0 +1,28 @@
+name: Link Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Checks every link in the Markdown files: relative paths and external URLs.
+      # A broken link fails the job.
+      # Workflow status badges are skipped: a badge does not resolve until its
+      # workflow has run on main, so a new workflow would fail on its own badge.
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --hidden --exclude 'badge\.svg$' './**/*.md'
+          fail: true
+        env:
+          # The built-in token, so links to github.com are not rate limited.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

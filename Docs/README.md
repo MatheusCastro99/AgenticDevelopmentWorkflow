@@ -1,5 +1,6 @@
 # AgenticDevelopmentWorkflow
 
+[![Link Check](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/actions/workflows/link-check.yml/badge.svg)](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/actions/workflows/link-check.yml)
 [![Status](https://img.shields.io/badge/Status-In%20Progress-orange)](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](../LICENSE)
 

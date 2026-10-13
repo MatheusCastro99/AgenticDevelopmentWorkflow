@@ -59,7 +59,7 @@ AgenticDevelopmentWorkflow/
 │   │   ├── Current_Focus.md - What is being worked on now
 │   │   ├── Decisions_Consistency.md - Standing rules (ADRs)
 │   │   ├── Development_Workflow.md - The stages of an issue
-│   │   ├── DataFlow.md - Diagram of the workflow
+│   │   ├── DataFlow.md - How data flows through a project
 │   │   └── Working_Agreements.md - How the owner and the agent work together
 │   ├── Agents/
 │   │   ├── Red_Team.md - Independent adversarial reviewer

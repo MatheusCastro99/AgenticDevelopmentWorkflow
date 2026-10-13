@@ -11,12 +11,12 @@
 - `.claude/CLAUDE.md`
 - A link-check workflow in GitHub Actions
 
-## Phase 2: Workflow core (#3): PLANNED
+## Phase 2: Workflow core (#3): CONCLUDED
 
 - `AI_CONTEXT`: the index an agent loads first
 - `Development_Workflow`: the stages of an issue, from gathering information to the memory flush
 - `Working_Agreements`: who decides, how recommendations are made, how findings are triaged, where decisions are recorded
-- `DataFlow`: a diagram of the workflow
+- `DataFlow`: how data flows through a project, from component to endpoint and back
 - The stale-docs list template
 
 ## Phase 3: Agents (#4): PLANNED

@@ -2,133 +2,62 @@
 
 ## What this file is for
 
-It draws the workflow as one diagram: the stages of an issue, the two subagents, and the documents that move between them. It shows what [Development Workflow](Development_Workflow.md) describes in words.
+It shows how data moves through the project: from the component where the user acts, to the endpoint that handles the request, to storage, and back to what the user sees. It shows the error and failsafe routes as well as the successful one.
 
-The agent reads it to see where a subagent runs and what to hand it. A reader new to the project sees the whole path of an issue at a glance.
+The agent reads it before changing anything on that path, so that it knows every hop a change touches and does not add a second route beside the one that exists.
 
 ## What goes in it, and what stays out
 
 Goes in:
 
-- The stages, in order
-- Each subagent, at the stage where it runs, with what it receives and what it returns
-- The documents a stage reads or writes: the issue, the context documents, the stale-docs list, the pull request, the project documentation
+- One diagram for each user action that matters (saving a record, signing in, loading a list)
+- Every hop on the path, named by the file or component that does the work
+- Where the data is checked, and where it is stored
+- The error routes: what happens when a check fails, when the server or storage fails, and when nothing answers
+- What the user sees at the end of each route
 
 Stays out:
 
-- What happens inside a stage. That is in [Development Workflow](Development_Workflow.md).
-- The owner's approval at the end of each stage. It applies to every stage, so drawing it thirteen times would hide the rest.
-- The project's own runtime data flow (requests, storage, screens). That belongs with the architecture document.
-
-## The diagram
-
-Boxes are stages, rounded shapes are subagents, and slanted shapes are documents. The owner approves the end of every stage; see [Working Agreements](Working_Agreements.md).
-
-```mermaid
-flowchart TD
-    ISSUE[/"Issue and its comments"/]
-    CTX[/"Context documents"/]
-    LIST[/"Stale-docs list"/]
-    PR[/"Pull request"/]
-    DOCS[/"Project documentation"/]
-    NOTES[/"Agent's persistent notes"/]
-
-    RT(["red-team subagent"])
-    HI(["historian subagent"])
-
-    S1["1. Gather all relevant information"]
-    S2["2. Settle open questions and decisions"]
-    S3["3. Plan the issue's sub-phases"]
-    S4["4. Plan the implementation of each phase"]
-    S5["5. Implement"]
-    S6["6. Test and refine"]
-    S7["7. Open a pull request"]
-    S8["8. Monitor CI and comments"]
-    S9["9. Last pass and red-team scan"]
-    S10["10. Fix comments and findings"]
-    S11["11. Historian doc pass"]
-    S12["12. Ready to merge"]
-    S13["13. Memory flush"]
-
-    ISSUE --> S1
-    CTX --> S1
-    S1 --> S2
-    S2 -- "scope decisions" --> ISSUE
-    S2 --> S3 --> S4 --> S5
-    S5 -- "an entry when a document goes stale" --> LIST
-    S5 --> S6 --> S7
-    S7 -- "opens" --> PR
-    PR -- "CI results, review comments" --> S8
-    S7 --> S8 --> S9
-    S9 -- "goal, target, constraints, prior findings" --> RT
-    RT -- "verdict and scored findings" --> S9
-    S9 --> S10 --> S11
-    LIST -- "open entries" --> S11
-    S11 -- "target, stale-docs list, owner's notes" --> HI
-    HI -- "edits for the listed entries" --> DOCS
-    HI -- "report: applied, not applied, found beyond the list" --> S11
-    S11 --> S12 --> S13
-    S13 -- "delete, condense, keep" --> NOTES
-```
-
-What each subagent receives and returns:
-
-| Subagent | Runs at | Receives | Returns |
-|---|---|---|---|
-| red-team | Stage 9, on the finished change | The goal (the issue and its decided scope), the target (branch, commit range or pull request), the constraints (what is out of scope), and prior findings on a re-review | A verdict and scored findings, each with evidence. It edits nothing. |
-| historian | Stage 11, once the change is final | The target, the stale-docs list, and the owner's notes on entries already rejected or changed | Edits for the listed entries, and a report: what it applied, what it did not apply and why, and what it found beyond the list. It edits nothing beyond the list and never commits. |
+- The folder structure and the list of key files. That belongs with the architecture document.
+- The rules the path must follow, such as a single source of truth. They are standing rules and belong with the decisions document.
+- How an issue is worked. That is in [Development Workflow](Development_Workflow.md).
+- Paths that are planned and not built. Draw what the project does today.
 
 ## Skeleton
 
-Copy the block, replace every `<placeholder>`, and remove the stages or subagents your project does not use. Mermaid reads angle brackets as HTML, so a placeholder left in place renders as an empty label.
+Copy the block, give each diagram the name of its action, and replace every word in capitals. Add or remove hops until the diagram matches the path in the project: a project with no server has no endpoint, and its path runs from the component to a service to storage.
 
-Placeholders: `<review subagent>`, `<documentation subagent>`, `<context documents>`, `<project documentation>`, `<what the review subagent receives>`, `<what it returns>`, `<what the documentation subagent receives>`, `<what it returns>`.
+Placeholders: `ACTION`, `COMPONENT`, `CLIENT CHECK`, `API CLIENT`, `ENDPOINT`, `SERVER CHECK`, `HANDLER`, `STORAGE`, and the four messages the user can end on.
 
 ````markdown
+# Data Flow
+
+Last updated: DATE
+
+## ACTION
+
 ```mermaid
 flowchart TD
-    ISSUE[/"Issue and its comments"/]
-    CTX[/"<context documents>"/]
-    LIST[/"Stale-docs list"/]
-    PR[/"Pull request"/]
-    DOCS[/"<project documentation>"/]
-
-    RT(["<review subagent>"])
-    HI(["<documentation subagent>"])
-
-    S1["1. Gather all relevant information"]
-    S2["2. Settle open questions and decisions"]
-    S3["3. Plan the issue's sub-phases"]
-    S4["4. Plan the implementation of each phase"]
-    S5["5. Implement"]
-    S6["6. Test and refine"]
-    S7["7. Open a pull request"]
-    S8["8. Monitor CI and comments"]
-    S9["9. Last pass and review scan"]
-    S10["10. Fix comments and findings"]
-    S11["11. Documentation pass"]
-    S12["12. Ready to merge"]
-
-    ISSUE --> S1
-    CTX --> S1
-    S1 --> S2
-    S2 -- "scope decisions" --> ISSUE
-    S2 --> S3 --> S4 --> S5
-    S5 -- "an entry when a document goes stale" --> LIST
-    S5 --> S6 --> S7
-    S7 -- "opens" --> PR
-    PR -- "CI results, review comments" --> S8
-    S7 --> S8 --> S9
-    S9 -- "<what the review subagent receives>" --> RT
-    RT -- "<what it returns>" --> S9
-    S9 --> S10 --> S11
-    LIST -- "open entries" --> S11
-    S11 -- "<what the documentation subagent receives>" --> HI
-    HI -- "<what it returns>" --> DOCS
-    S11 --> S12
+    A["COMPONENT<br/>the user does ACTION"] --> B{"CLIENT CHECK<br/>is the input valid?"}
+    B -- "no" --> B1["COMPONENT<br/>shows what to correct"]
+    B -- "yes" --> C["API CLIENT<br/>sends the request"]
+    C --> D["ENDPOINT<br/>receives the request"]
+    C -- "no answer" --> C1["COMPONENT<br/>says the request did not go through<br/>and keeps what the user entered"]
+    D --> E{"SERVER CHECK<br/>is the request valid and allowed?"}
+    E -- "no" --> E1["ENDPOINT<br/>answers with a client error"]
+    E -- "yes" --> F["HANDLER<br/>applies the rules"]
+    F --> G[("STORAGE<br/>reads or writes")]
+    G -- "fails" --> G1["ENDPOINT<br/>answers with a server error"]
+    G -- "succeeds" --> H["ENDPOINT<br/>answers with the result"]
+    E1 --> I["COMPONENT<br/>shows the reason"]
+    G1 --> J["COMPONENT<br/>says the action failed<br/>and offers a retry"]
+    H --> K["COMPONENT<br/>shows the result"]
 ```
+
+Notes:
+- <Anything the diagram cannot show: a retry limit, a cache that is updated, a rule about ordering.>
 ````
 
 ## Examples
 
-Diagrams from BabyBuddyHelper and InvoiceMe arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+Data flow diagrams from BabyBuddyHelper and InvoiceMe arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).

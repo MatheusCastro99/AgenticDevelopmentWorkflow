@@ -13,6 +13,7 @@ Goes in:
 - The stages, in their fixed order
 - For each stage: what happens, who acts, what is produced, what is approved
 - The few rules that apply to every stage
+- One diagram of the stages, the subagents and the documents that move between them
 
 Stays out:
 
@@ -140,6 +141,64 @@ Stays out:
 
 This stage runs only when an epic is closed out, or after an issue that has no parent and no sibling issues. A sub-issue of an open epic gets no flush; its notes wait for the close-out.
 
+## The workflow as a diagram
+
+Boxes are stages, rounded shapes are subagents, and slanted shapes are documents. The owner's approval at the end of every stage is not drawn; it applies to all thirteen.
+
+```mermaid
+flowchart TD
+    ISSUE[/"Issue and its comments"/]
+    CTX[/"Context documents"/]
+    LIST[/"Stale-docs list"/]
+    PR[/"Pull request"/]
+    DOCS[/"Project documentation"/]
+    NOTES[/"Agent's persistent notes"/]
+
+    RT(["red-team subagent"])
+    HI(["historian subagent"])
+
+    S1["1. Gather all relevant information"]
+    S2["2. Settle open questions and decisions"]
+    S3["3. Plan the issue's sub-phases"]
+    S4["4. Plan the implementation of each phase"]
+    S5["5. Implement"]
+    S6["6. Test and refine"]
+    S7["7. Open a pull request"]
+    S8["8. Monitor CI and comments"]
+    S9["9. Last pass and red-team scan"]
+    S10["10. Fix comments and findings"]
+    S11["11. Historian doc pass"]
+    S12["12. Ready to merge"]
+    S13["13. Memory flush"]
+
+    ISSUE --> S1
+    CTX --> S1
+    S1 --> S2
+    S2 -- "scope decisions" --> ISSUE
+    S2 --> S3 --> S4 --> S5
+    S5 -- "an entry when a document goes stale" --> LIST
+    S5 --> S6 --> S7
+    S7 -- "opens" --> PR
+    PR -- "CI results, review comments" --> S8
+    S7 --> S8 --> S9
+    S9 -- "goal, target, constraints, prior findings" --> RT
+    RT -- "verdict and scored findings" --> S9
+    S9 --> S10 --> S11
+    LIST -- "open entries" --> S11
+    S11 -- "target, stale-docs list, owner's notes" --> HI
+    HI -- "edits for the listed entries" --> DOCS
+    HI -- "report: applied, not applied, found beyond the list" --> S11
+    S11 --> S12 --> S13
+    S13 -- "delete, condense, keep" --> NOTES
+```
+
+What each subagent receives and returns:
+
+| Subagent | Runs at | Receives | Returns |
+|---|---|---|---|
+| red-team | Stage 9, on the finished change | The goal (the issue and its decided scope), the target (branch, commit range or pull request), the constraints (what is out of scope), and prior findings on a re-review | A verdict and scored findings, each with evidence. It edits nothing. |
+| historian | Stage 11, once the change is final | The target, the stale-docs list, and the owner's notes on entries already rejected or changed | Edits for the listed entries, and a report: what it applied, what it did not apply and why, and what it found beyond the list. It edits nothing beyond the list and never commits. |
+
 ## Skeleton
 
 ```markdown
@@ -166,7 +225,7 @@ Every issue goes through these stages, in order.
 3. Plan the issue's sub-phases
 4. Plan the implementation of each phase
 5. Implement
-6. Test and refine              commands: <build>, <test>
+6. Test and refine
 7. Open a pull request
 8. Monitor CI and comments      reviewers: <CI checks, review bots>
 9. Last pass and red-team scan

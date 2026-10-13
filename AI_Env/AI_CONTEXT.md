@@ -38,7 +38,7 @@ This is the index of this kit. Pages that arrive with a later phase are named in
 |---|---|
 | [Development Workflow](Context/Development_Workflow.md) | Which stages does an issue go through, and what is approved at each? |
 | [Working Agreements](Context/Working_Agreements.md) | Who decides, how is a recommendation made, how is a finding triaged, where is a decision recorded? |
-| [Data Flow](Context/DataFlow.md) | Where does each subagent run, and what moves between the stages? |
+| [Data Flow](Context/DataFlow.md) | How does data move from a component to an endpoint and back, and what happens on an error? |
 | `Context/Architecture_Design.md` (#6) | How is the project structured, and which files matter? |
 | `Context/UI_Guidelines.md` (#6) | What must the interface look and feel like? |
 | `Context/Current_Focus.md` (#6) | What is being worked on now? |
@@ -82,7 +82,7 @@ Last updated: <date>
 | [UI Guidelines](<path>) | What must the interface look and feel like? |
 | [Development Workflow](<path>) | Which stages does an issue go through? |
 | [Working Agreements](<path>) | Who decides, and how? |
-| [Data Flow](<path>) | Where does each subagent run? |
+| [Data Flow](<path>) | How does data move from a component to an endpoint and back? |
 
 ## Agents and skills
 | Page | What it answers |

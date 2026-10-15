@@ -8,6 +8,8 @@ AgenticDevelopmentWorkflow documents how I work with an AI coding agent on a rea
 
 It is a kit. Each piece explains what it is for, gives a skeleton to fill in, and shows how it was filled in on two projects built this way: [BabyBuddyHelper](https://github.com/MatheusCastro99/BabyBuddyHelper) (.NET MAUI) and [InvoiceMe](https://github.com/MatheusCastro99/InvoiceMe) (MERN).
 
+The kit is a customizable harness: each project, or developer, may employ it as they see fit. The two projects in the examples each use it in their own way.
+
 The repository is being built now, with the workflow it documents. See [Status](#status) for what exists today.
 
 ---

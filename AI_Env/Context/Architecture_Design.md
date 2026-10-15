@@ -14,7 +14,7 @@ Goes in:
 - The key files, grouped by folder, with one line on any file whose name does not say what it does
 - Optionally, one overview diagram of the parts of the project and how they connect
 - A link to the [Data Flow](DataFlow.md) page
-- The planned direction, in its own section, marked as not built, with the numbers of the ADRs that decide it
+- The planned direction, in its own section, marked as not built, with the numbers of the ADRs that decide it, if any
 
 Stays out:
 
@@ -27,7 +27,7 @@ Stays out:
 
 Copy the page outline and replace the text in angle brackets. Repeat a `###` block for each folder that holds key files. The overview diagram is optional: delete its section if the project does not need one, or replace every word in capitals with the name of a part and add a node for each part.
 
-Placeholders: `<date>`, `<project>`, `<folder>`, `<file>`, `<what it does>`, `<direction>`, `<ADR-NNN>`, `PART A`, `PART B`, `STORAGE`, and the text in angle brackets in the outline.
+Placeholders: `<date>`, `<project>`, `<folder>`, `<file>`, `<what it does>`, `<direction>`, `<ADR-NNN>`, `<path>`, `PART A`, `PART B`, `STORAGE`, and the text in angle brackets in the outline.
 
 ````markdown
 # Architecture Design
@@ -62,7 +62,7 @@ How data moves through these parts: [Data Flow](<path>)
 
 Not built yet.
 
-- <direction> (<ADR-NNN>)
+- <direction> (<ADR-NNN>, if one decides it)
 ````
 
 ## Examples

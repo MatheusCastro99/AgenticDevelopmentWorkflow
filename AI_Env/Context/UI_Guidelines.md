@@ -6,7 +6,7 @@ It holds the interface and experience guardrails: what the product should feel l
 
 The main session reads it before any interface work, and the [ux-design](../Skills/UX_Design.md) skill applies it as its authority.
 
-A project with a user interface needs this page. A project without one, such as a library, a command-line tool or an API with no client of its own, leaves it out.
+A project with a user interface needs this page. A project without one, such as a library, a command-line tool or an API with no client of its own, may leave it out.
 
 ## What goes in it, and what stays out
 

@@ -42,7 +42,7 @@ This is the index of this kit. Pages that arrive with a later phase are named in
 | `Context/Architecture_Design.md` (#6) | How is the project structured, and which files matter? |
 | `Context/UI_Guidelines.md` (#6) | What must the interface look and feel like? |
 | `Context/Current_Focus.md` (#6) | What is being worked on now? |
-| `Context/Decisions_Consistency.md` (#6) | Which standing rules must every change follow? |
+| [Decisions and Consistency](Context/Decisions_Consistency.md) | Which standing rules must every change follow? |
 
 ### Agents and skills
 

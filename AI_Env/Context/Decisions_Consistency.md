@@ -20,7 +20,7 @@ Stays out. None of these is an ADR:
 
 - One-off choices, such as a library picked for one task or the plan for one migration. Those go in the issue, the pull request or the commit message.
 - The story of how a decision was reached. That is a comment on the issue ([Working Agreements](Working_Agreements.md), "Where decisions are recorded").
-- Facts that go stale with the next change, such as line numbers or counts. The structure and the key files belong with the architecture document.
+- Facts that go stale with the next change, such as line numbers or counts. The structure and the key files belong with the [architecture document](Architecture_Design.md).
 - How the owner and the agent work together. That is in [Working Agreements](Working_Agreements.md).
 - Rules about how the main session behaves in the repository. They are in the agent's guidance file.
 

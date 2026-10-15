@@ -30,7 +30,7 @@
 - Documentation for the guardrails review and UX design skills
 - Copy-ready skills for both in `Templates/skills/`
 
-## Phase 5: Context templates (#6): PLANNED
+## Phase 5: Context templates (#6): CONCLUDED
 
 - `Architecture_Design`, `UI_Guidelines`, `Current_Focus`, `Decisions_Consistency`
 - Each with its purpose, what goes in it, what stays out, and a skeleton

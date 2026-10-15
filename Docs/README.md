@@ -104,10 +104,10 @@ Runnable agent and skill definitions in `.claude/agents` and `.claude/skills` ar
 | 2. Workflow core | [#3](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/3) | Done |
 | 3. Agents | [#4](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/4) | Done |
 | 4. Skills | [#5](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/5) | Done |
-| 5. Context templates | [#6](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/6) | Planned |
+| 5. Context templates | [#6](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/6) | Done |
 | 6. Examples | [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7) | Planned |
 
-Today the repository holds its own documents in `Docs/`, the workflow core (the context index, the `Development_Workflow`, `Working_Agreements` and `DataFlow` pages, and the stale-docs list template), and the agents and skills: the red-team and historian pages, the guardrails review and UX design pages, and a copy-ready definition for each in `Templates/`. The four remaining context pages and all of `Examples/` arrive with phases 5 and 6.
+Today the repository holds its own documents in `Docs/`, the workflow core (the context index, the `Development_Workflow`, `Working_Agreements` and `DataFlow` pages, and the stale-docs list template), and the agents and skills: the red-team and historian pages, the guardrails review and UX design pages, and a copy-ready definition for each in `Templates/`. It also holds the other four context pages: architecture design, UI guidelines, current focus, and decisions and consistency. All of `Examples/` arrives with phase 6.
 
 Details are in the [Project Roadmap](Project_Roadmap.md).
 

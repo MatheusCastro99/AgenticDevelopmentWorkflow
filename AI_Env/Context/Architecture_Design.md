@@ -21,7 +21,7 @@ Stays out:
 - The rules the structure must follow. They are standing rules and belong in [Decisions and Consistency](Decisions_Consistency.md); this page cites them by ADR number.
 - The path a request takes, hop by hop. That is in [Data Flow](DataFlow.md).
 - Build, test and run commands. They belong in the agent guidance file or the README.
-- What is being worked on now. That belongs with the current-focus document.
+- What is being worked on now. That belongs with the [current-focus document](Current_Focus.md).
 
 ## Skeleton
 

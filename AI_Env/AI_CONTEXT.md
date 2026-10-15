@@ -41,7 +41,7 @@ This is the index of this kit. Pages that arrive with a later phase are named in
 | [Data Flow](Context/DataFlow.md) | How does data move from a component to an endpoint and back, and what happens on an error? |
 | [Architecture Design](Context/Architecture_Design.md) | How is the project structured, and which files matter? |
 | `Context/UI_Guidelines.md` (#6) | What must the interface look and feel like? |
-| `Context/Current_Focus.md` (#6) | What is being worked on now? |
+| [Current Focus](Context/Current_Focus.md) | What is being worked on now? |
 | [Decisions and Consistency](Context/Decisions_Consistency.md) | Which standing rules must every change follow? |
 
 ### Agents and skills

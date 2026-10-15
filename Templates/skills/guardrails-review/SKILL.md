@@ -44,7 +44,7 @@ Read these before judging anything. If a check below disagrees with them, the do
 - `<context-index>`: what the project is, and its warnings
 - `<current-focus-doc>`: what is being worked on, and what is intentionally unfinished
 
-A rule whose status says it is not in force yet (pending, temporary) describes a target, not the current state. Don't report the gap as a defect unless the change under review claims to close it. A change that moves the code further from that target is a finding.
+A rule whose status says it is not in force yet (pending) describes a target, not the current state. Don't report the gap as a defect unless the change under review claims to close it. A change that moves the code further from that target is a finding.
 
 ## 2. Project checks
 

@@ -17,7 +17,7 @@ Goes in the skill:
 
 Stays out:
 
-- **The identity, the palette, the typography and the purpose of each screen.** A skill holds procedure, not project truth. Those live in the UI guidelines document, described in `Context/UI_Guidelines.md` (#6); the skill names that document as the authority and applies it.
+- **The identity, the palette, the typography and the purpose of each screen.** A skill holds procedure, not project truth. Those live in the UI guidelines document, described in [UI Guidelines](../Context/UI_Guidelines.md); the skill names that document as the authority and applies it.
 - **Authority.** The skill recommends; the owner decides.
 - A view of the running app. The skill reads the source of a screen. It cannot see the result, so it ends with what the owner should look at on screen.
 

@@ -67,4 +67,4 @@ Not built yet.
 
 ## Examples
 
-Excerpts from the architecture documents of BabyBuddyHelper and InvoiceMe arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+Examples: [BabyBuddyHelper](../../Examples/BabyBuddyHelper-examples.md#architecture-design), [InvoiceMe](../../Examples/InvoiceMe-examples.md#architecture-design).

@@ -84,4 +84,4 @@ A check names where to look and cites its rule by ID. It does not copy the rule'
 
 ## Examples
 
-Excerpts from the `review-guardrails` documentation of BabyBuddyHelper and InvoiceMe arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+Examples: [BabyBuddyHelper](../../Examples/BabyBuddyHelper-examples.md#guardrails-review), [InvoiceMe](../../Examples/InvoiceMe-examples.md#guardrails-review).

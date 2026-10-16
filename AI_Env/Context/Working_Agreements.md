@@ -105,4 +105,4 @@ After posting, the main session tells the owner which decisions it posted and wh
 
 ## Examples
 
-Excerpts showing these agreements on BabyBuddyHelper and InvoiceMe arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+No examples: this page writes down the agreements both projects already follow.

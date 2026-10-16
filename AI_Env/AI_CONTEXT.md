@@ -23,7 +23,7 @@ Stays out:
 
 ## The index
 
-This is the index of this kit. Pages that arrive with a later phase are named in plain text and become links when they exist.
+This is the index of this kit.
 
 ### This repository
 
@@ -58,7 +58,7 @@ This is the index of this kit. Pages that arrive with a later phase are named in
 - [Stale-docs list](../Templates/stale-docs.md): the running list a change keeps for the documentation pass
 - Copy-ready agent definitions: [red-team](../Templates/agents/red-team.md), [historian](../Templates/agents/historian.md)
 - Copy-ready skills: [guardrails-review](../Templates/skills/guardrails-review/SKILL.md), [ux-design](../Templates/skills/ux-design/SKILL.md)
-- `Examples/` (#7): the same pieces as filled in on BabyBuddyHelper and InvoiceMe
+- Examples: [BabyBuddyHelper](../Examples/BabyBuddyHelper-examples.md), [InvoiceMe](../Examples/InvoiceMe-examples.md): how each project uses the kit's pieces
 
 ## Skeleton
 
@@ -93,4 +93,4 @@ Last updated: <date>
 
 ## Examples
 
-Excerpts showing an index page on a real project arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+Examples: [BabyBuddyHelper](../Examples/BabyBuddyHelper-examples.md#ai-context).

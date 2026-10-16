@@ -66,4 +66,4 @@ flowchart TD
 
 ## Examples
 
-Data flow diagrams from BabyBuddyHelper and InvoiceMe arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+Examples: [BabyBuddyHelper](../../Examples/BabyBuddyHelper-examples.md#data-flow), [InvoiceMe](../../Examples/InvoiceMe-examples.md#data-flow).

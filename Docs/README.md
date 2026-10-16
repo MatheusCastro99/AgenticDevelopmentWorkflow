@@ -1,10 +1,10 @@
-# AgenticDevelopmentWorkflow
+# HarnessConfigAndWorkflow
 
-[![Link Check](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/actions/workflows/link-check.yml/badge.svg)](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/actions/workflows/link-check.yml)
-[![Status](https://img.shields.io/badge/Status-Functional-brightgreen)](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/1)
+[![Link Check](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/actions/workflows/link-check.yml/badge.svg)](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/actions/workflows/link-check.yml)
+[![Status](https://img.shields.io/badge/Status-Functional-brightgreen)](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](../LICENSE)
 
-AgenticDevelopmentWorkflow documents how I work with an AI coding agent on a real project: the context it reads, the rules it follows, the subagents and skills it uses, and the stages every issue goes through.
+HarnessConfigAndWorkflow documents how I work with an AI coding agent on a real project: the context it reads, the rules it follows, the subagents and skills it uses, and the stages every issue goes through.
 
 It is a kit. Each piece explains what it is for, gives a skeleton to fill in, and shows how it was filled in on two projects built this way: [BabyBuddyHelper](https://github.com/MatheusCastro99/BabyBuddyHelper) (.NET MAUI) and [InvoiceMe](https://github.com/MatheusCastro99/InvoiceMe) (MERN).
 
@@ -48,7 +48,7 @@ The full version is in [Project Vision](Project_Vision.md).
 ## Structure
 
 ```text
-AgenticDevelopmentWorkflow/
+HarnessConfigAndWorkflow/
 │
 ├── .claude/
 │   └── CLAUDE.md
@@ -102,12 +102,12 @@ Runnable agent and skill definitions in `.claude/agents` and `.claude/skills` ar
 
 | Phase | Issue | Status |
 |---|---|---|
-| 1. Planning and scaffold | [#2](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/2) | Done |
-| 2. Workflow core | [#3](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/3) | Done |
-| 3. Agents | [#4](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/4) | Done |
-| 4. Skills | [#5](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/5) | Done |
-| 5. Context templates | [#6](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/6) | Done |
-| 6. Examples | [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7) | Done |
+| 1. Planning and scaffold | [#2](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/2) | Done |
+| 2. Workflow core | [#3](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/3) | Done |
+| 3. Agents | [#4](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/4) | Done |
+| 4. Skills | [#5](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/5) | Done |
+| 5. Context templates | [#6](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/6) | Done |
+| 6. Examples | [#7](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/7) | Done |
 
 Today the repository holds its own documents in `Docs/`, the workflow core (the context index, the `Development_Workflow`, `Working_Agreements` and `DataFlow` pages, and the stale-docs list template), and the agents and skills: the red-team and historian pages, the guardrails review and UX design pages, and a copy-ready definition for each in `Templates/`. It also holds the other four context pages: architecture design, UI guidelines, current focus, and decisions and consistency. `Examples/` holds one file per project, with how each uses the kit's pieces.
 
@@ -132,4 +132,4 @@ Details are in the [Project Roadmap](Project_Roadmap.md).
 **Matheus Castro**
 
 Repository:
-https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow
+https://github.com/MatheusCastro99/HarnessConfigAndWorkflow

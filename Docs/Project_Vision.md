@@ -2,7 +2,7 @@
 
 ## Summary
 
-AgenticDevelopmentWorkflow is a kit that documents how I work with an AI coding agent on a real project:
+HarnessConfigAndWorkflow is a kit that documents how I work with an AI coding agent on a real project:
 the context it reads, the rules it follows, the subagents and skills it uses, and the steps every issue goes through.
 
 ---

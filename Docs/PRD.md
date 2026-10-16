@@ -1,8 +1,8 @@
-# Product Requirements Document: AgenticDevelopmentWorkflow
+# Product Requirements Document: HarnessConfigAndWorkflow
 
 ## Purpose
 
-AgenticDevelopmentWorkflow is a documentation kit for agentic assisted development. It is a guide that can be used for any platform that supports its requirements (parallel agents, context management, skills).
+HarnessConfigAndWorkflow is a documentation kit for agentic assisted development. It is a guide that can be used for any platform that supports its requirements (parallel agents, context management, skills).
 It describes the environment an AI coding agent works in on a project (context documents, subagents, skills) and the workflow every issue follows, from gathering information to merge.
 Each piece comes with a fill-in skeleton and with real examples from two projects: BabyBuddyHelper (.NET MAUI) and InvoiceMe (MERN).
 
@@ -38,7 +38,7 @@ Every page under `Harness_Config/` has the same shape:
 ## Repository Structure
 
 ```
-AgenticDevelopmentWorkflow/
+HarnessConfigAndWorkflow/
 ├── .claude/
 │   ├── CLAUDE.md - Guidance for Claude Code in this repository (tracked)
 │   ├── agents/ - This repository's own runnable agents (gitignored)

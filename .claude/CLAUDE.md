@@ -7,7 +7,7 @@ This file tells claude-code and local subagents how to work in this repository. 
 Repository facts
 ---------------
 - Repo root: the directory containing `LICENSE`
-- GitHub: MatheusCastro99/AgenticDevelopmentWorkflow (public)
+- GitHub: MatheusCastro99/HarnessConfigAndWorkflow (public)
 - Content: Markdown, with Mermaid for diagrams. There is no code to build or compile.
 - `Docs/` holds this repository's own documents. `Harness_Config/`, `Templates/` and `Examples/` are the kit.
 - Source projects the kit draws from (both public): MatheusCastro99/BabyBuddyHelper (.NET MAUI) and MatheusCastro99/InvoiceMe (MERN).

@@ -1,6 +1,6 @@
 # Project Roadmap
 
-## Epic 1: [#1](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/1)
+## Epic 1: [#1](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/1)
 
 - One issue and one pull request per phase, worked in this order.
 - Phases 3 and 4 were delivered together in one pull request, because the red-team template preloads the guardrails skill.
@@ -41,7 +41,7 @@
 - Links from every `Harness_Config/` page to its examples
 - README pass and close-out of the epic
 
-## Epic 2: [#11](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/11)
+## Epic 2: [#11](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/11)
 
 - Starts after epic 1 closes. One issue and one pull request per phase, worked in this order.
 

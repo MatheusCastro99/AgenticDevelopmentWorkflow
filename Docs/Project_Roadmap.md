@@ -45,13 +45,18 @@
 
 - Starts after epic 1 closes. One issue and one pull request per phase, worked in this order.
 
-## Phase 1: From AI environment kit to customizable AI harness: PLANNED
+## Phase 1: Customizable harness configuration and workflow (#14): PLANNED
 
-- A directional change: the kit is reframed as a customizable AI harness, which each project or developer adapts as they see fit
+- A directional change: the kit is reframed as a customizable harness configuration and workflow, which each project or developer adapts as they see fit
 
-## Phase 2: Onboarding skill: PLANNED
+## Phase 2: Onboarding (#15): PLANNED
 
-- A skill that surveys a project through a read-only subagent and drafts its harness pages with the developer
+- A skill that surveys a project through a read-only subagent and drafts its pages with the developer, starting from the smallest set the project needs
+- Both as copy-ready definitions in `Templates/`, explained in a "Get Started" section of the README
+
+## Phase 3: Validation (#16): PLANNED
+
+- A run of the onboarding skill on a snapshot of InvoiceMe with its documentation removed, compared with the documents written by hand
 
 ---
 

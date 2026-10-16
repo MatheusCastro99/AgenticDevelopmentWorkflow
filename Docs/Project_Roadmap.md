@@ -1,6 +1,6 @@
 # Project Roadmap
 
-## Epic: [#1](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/1)
+## Epic 1: [#1](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/1)
 
 - One issue and one pull request per phase, worked in this order.
 - Phases 3 and 4 were delivered together in one pull request, because the red-team template preloads the guardrails skill.
@@ -35,17 +35,29 @@
 - `Architecture_Design`, `UI_Guidelines`, `Current_Focus`, `Decisions_Consistency`
 - Each with its purpose, what goes in it, what stays out, and a skeleton
 
-## Phase 6: Examples (#7): PLANNED
+## Phase 6: Examples (#7): CONCLUDED
 
-- Excerpts from BabyBuddyHelper and InvoiceMe, side by side
-- Links from every `AI_Env/` page to its excerpts
+- One examples file per project, for BabyBuddyHelper and InvoiceMe
+- Links from every `AI_Env/` page to its examples
 - README pass and close-out of the epic
+
+## Epic 2: [#11](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/11)
+
+- Starts after epic 1 closes. One issue and one pull request per phase, worked in this order.
+
+## Phase 1: From AI environment kit to customizable AI harness: PLANNED
+
+- A directional change: the kit is reframed as a customizable AI harness, which each project or developer adapts as they see fit
+
+## Phase 2: Onboarding skill: PLANNED
+
+- A skill that surveys a project through a read-only subagent and drafts its harness pages with the developer
 
 ---
 
-## After the epic
+## After the epics
 
-Nothing is scheduled. Each of these was left out of the epic on purpose (at least for now):
+Nothing is scheduled. Each of these was left out of the epics on purpose (at least for now):
 
 - A script that installs the kit into a project
 - A Claude pull request review workflow for this repository

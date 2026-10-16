@@ -114,4 +114,4 @@ The copy-ready definition is [Templates/agents/red-team.md](../../Templates/agen
 
 ## Examples
 
-Excerpts from the red-team documentation of BabyBuddyHelper and InvoiceMe arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+Examples: [BabyBuddyHelper](../../Examples/BabyBuddyHelper-examples.md#red-team), [InvoiceMe](../../Examples/InvoiceMe-examples.md#red-team).

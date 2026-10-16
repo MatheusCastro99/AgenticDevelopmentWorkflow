@@ -114,4 +114,4 @@ The copy-ready definition is [Templates/agents/historian.md](../../Templates/age
 
 ## Examples
 
-Excerpts from the historian documentation of BabyBuddyHelper and InvoiceMe arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+Examples: [BabyBuddyHelper](../../Examples/BabyBuddyHelper-examples.md#historian), [InvoiceMe](../../Examples/InvoiceMe-examples.md#historian).

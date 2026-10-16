@@ -238,4 +238,4 @@ Every issue goes through these stages, in order.
 
 ## Examples
 
-Excerpts showing how BabyBuddyHelper and InvoiceMe apply these stages arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+No examples: this page writes down the workflow both projects already follow.

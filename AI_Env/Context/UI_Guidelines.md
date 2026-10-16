@@ -104,4 +104,4 @@ Before approving an interface change, ask:
 
 ## Examples
 
-Excerpts from BabyBuddyHelper's UI guidelines arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+Examples: [BabyBuddyHelper](../../Examples/BabyBuddyHelper-examples.md#ui-guidelines).

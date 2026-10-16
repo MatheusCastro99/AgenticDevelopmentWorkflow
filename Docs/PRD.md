@@ -33,7 +33,7 @@ Every page under `AI_Env/` has the same shape:
 1. What the file is for
 2. What goes in it, and what stays out
 3. A skeleton to fill in
-4. Links to the matching excerpts in `Examples/`
+4. Links to the matching examples in `Examples/`
 
 ## Repository Structure
 
@@ -72,8 +72,8 @@ AgenticDevelopmentWorkflow/
 │   ├── skills/ - guardrails-review/SKILL.md, ux-design/SKILL.md
 │   └── stale-docs.md - Stale-docs list
 ├── Examples/
-│   ├── BabyBuddyHelper/
-│   └── InvoiceMe/
+│   ├── BabyBuddyHelper-examples.md
+│   └── InvoiceMe-examples.md
 ├── LICENSE - MIT
 └── .gitignore
 ```
@@ -85,7 +85,7 @@ AgenticDevelopmentWorkflow/
 - A reader can fill in any skeleton for a new project without reading either source repository.
 - A template definition runs in Claude Code once its placeholders are filled, with no other edits.
 - Every example names the file and commit it came from.
-- Where the two projects do the same thing differently, the kit shows both and says why.
+- The kit shows how each project uses a piece, without justifying the differences.
 - Nothing private is published: no secrets, no personal notes, no unfixed security findings.
 - Every link in the repository resolves.
 

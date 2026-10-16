@@ -77,4 +77,4 @@ Status: Accepted, <status>
 
 ## Examples
 
-Excerpts from the decisions files of BabyBuddyHelper and InvoiceMe arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+Examples: [BabyBuddyHelper](../../Examples/BabyBuddyHelper-examples.md#decisions-and-consistency), [InvoiceMe](../../Examples/InvoiceMe-examples.md#decisions-and-consistency).

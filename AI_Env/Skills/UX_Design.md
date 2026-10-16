@@ -73,4 +73,4 @@ The copy-ready skill is [Templates/skills/ux-design/SKILL.md](../../Templates/sk
 
 ## Examples
 
-Excerpts from BabyBuddyHelper's `ux-design` documentation arrive in `Examples/` with [#7](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/7).
+Examples: [BabyBuddyHelper](../../Examples/BabyBuddyHelper-examples.md#ux-design).

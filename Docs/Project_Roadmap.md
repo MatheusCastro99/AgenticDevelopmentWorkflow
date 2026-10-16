@@ -35,10 +35,10 @@
 - `Architecture_Design`, `UI_Guidelines`, `Current_Focus`, `Decisions_Consistency`
 - Each with its purpose, what goes in it, what stays out, and a skeleton
 
-## Phase 6: Examples (#7): PLANNED
+## Phase 6: Examples (#7): CONCLUDED
 
-- Excerpts from BabyBuddyHelper and InvoiceMe, side by side
-- Links from every `AI_Env/` page to its excerpts
+- One examples file per project, for BabyBuddyHelper and InvoiceMe
+- Links from every `AI_Env/` page to its examples
 - README pass and close-out of the epic
 
 ---
@@ -49,5 +49,6 @@ Nothing is scheduled. Each of these was left out of the epic on purpose (at leas
 
 - A script that installs the kit into a project
 - A Claude pull request review workflow for this repository
+- An onboarding skill that surveys a project and drafts its kit pages ([#11](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/11))
 
 The roadmap is directional; planned items should not be read as available today.

@@ -95,8 +95,6 @@ Both projects run the same agent with the same settings, process, scoring and li
 | Probe scripts | Not mentioned | It may write throwaway probe scripts, only in the operating system's temporary directory |
 | Results section | Build | Verification: the commands run and their results |
 
-BabyBuddyHelper's red-team also reported stale docs at first. That was removed because it is the historian's job. InvoiceMe's definition was adapted before that change, and its documentation records no reason for keeping the section.
-
 On the first row this workflow follows InvoiceMe: the scan has a fixed place at stage 9, and skipping it for a small change is a judgment the owner makes or delegates. On stale docs and probe scripts the template follows BabyBuddyHelper. It names its results section "Build and tests".
 
 ## Skeleton

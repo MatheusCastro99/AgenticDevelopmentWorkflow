@@ -97,7 +97,7 @@ Both projects run the same agent with the same settings, process, scoring and li
 
 BabyBuddyHelper's red-team also reported stale docs at first. That was removed because it is the historian's job. InvoiceMe's definition was adapted before that change, and its documentation records no reason for keeping the section.
 
-On the first row the kit follows InvoiceMe: the scan has a fixed place at stage 9, and skipping it for a small change is a judgment the owner makes or delegates. On stale docs and probe scripts the template follows BabyBuddyHelper. It names its results section "Build and tests".
+On the first row this workflow follows InvoiceMe: the scan has a fixed place at stage 9, and skipping it for a small change is a judgment the owner makes or delegates. On stale docs and probe scripts the template follows BabyBuddyHelper. It names its results section "Build and tests".
 
 ## Skeleton
 

@@ -9,8 +9,8 @@ Repository facts
 - Repo root: the directory containing `LICENSE`
 - GitHub: MatheusCastro99/HarnessConfigAndWorkflow (public)
 - Content: Markdown, with Mermaid for diagrams. There is no code to build or compile.
-- `Docs/` holds this repository's own documents. `Harness_Config/`, `Templates/` and `Examples/` are the kit.
-- Source projects the kit draws from (both public): MatheusCastro99/BabyBuddyHelper (.NET MAUI) and MatheusCastro99/InvoiceMe (MERN).
+- `Docs/` holds this repository's own documents. `Harness_Config/`, `Templates/` and `Examples/` are the harness configuration and workflow.
+- Source projects this repository draws from (both public): MatheusCastro99/BabyBuddyHelper (.NET MAUI) and MatheusCastro99/InvoiceMe (MERN).
 
 Authoritative docs (always load before making edits)
 ---------------------------------------------------

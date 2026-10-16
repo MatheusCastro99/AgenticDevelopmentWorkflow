@@ -6,9 +6,9 @@
 
 HarnessConfigAndWorkflow documents how I work with an AI coding agent on a real project: the context it reads, the rules it follows, the subagents and skills it uses, and the stages every issue goes through.
 
-It is a kit. Each piece explains what it is for, gives a skeleton to fill in, and shows how it was filled in on two projects built this way: [BabyBuddyHelper](https://github.com/MatheusCastro99/BabyBuddyHelper) (.NET MAUI) and [InvoiceMe](https://github.com/MatheusCastro99/InvoiceMe) (MERN).
+It is a customizable harness configuration and workflow. Each piece explains what it is for, gives a skeleton to fill in, and shows how it was filled in on two projects built this way: [BabyBuddyHelper](https://github.com/MatheusCastro99/BabyBuddyHelper) (.NET MAUI) and [InvoiceMe](https://github.com/MatheusCastro99/InvoiceMe) (MERN).
 
-The kit is a customizable harness: each project, or developer, may employ it as they see fit. The two projects in the examples each use it in their own way.
+Each project, or developer, may employ it as they see fit. The two projects in the examples each use it in their own way.
 
 The repository was built with the workflow it documents. See [Status](#status) for what exists today.
 
@@ -18,7 +18,7 @@ The repository was built with the workflow it documents. See [Status](#status) f
 
 Developers looking for an organized, structured way to start agentic development in their projects.
 
-The guide applies to any platform that supports its requirements: parallel agents, context management and skills. The copy-ready definitions in `Templates/` are written for Claude Code.
+The workflow and its pages apply to any platform that supports its requirements: parallel agents, context management and skills. The copy-ready definitions in `Templates/` are written for Claude Code.
 
 ## The approach in short
 
@@ -34,7 +34,7 @@ The full version is in [Project Vision](Project_Vision.md).
 
 ---
 
-## What is in the kit
+## What it contains
 
 | Piece | Where | What it gives you |
 |---|---|---|
@@ -92,7 +92,7 @@ HarnessConfigAndWorkflow/
 └── LICENSE
 ```
 
-`Docs/` holds this repository's own documents. `Harness_Config/`, `Templates/` and `Examples/` are the kit.
+`Docs/` holds this repository's own documents. `Harness_Config/`, `Templates/` and `Examples/` are the harness configuration and workflow.
 
 Runnable agent and skill definitions in `.claude/agents` and `.claude/skills` are personal tooling and are not tracked, here or in the two source projects. `Templates/` holds the versions meant to be copied.
 
@@ -109,7 +109,7 @@ Runnable agent and skill definitions in `.claude/agents` and `.claude/skills` ar
 | 5. Context templates | [#6](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/6) | Done |
 | 6. Examples | [#7](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/7) | Done |
 
-Today the repository holds its own documents in `Docs/`, the workflow core (the context index, the `Development_Workflow`, `Working_Agreements` and `DataFlow` pages, and the stale-docs list template), and the agents and skills: the red-team and historian pages, the guardrails review and UX design pages, and a copy-ready definition for each in `Templates/`. It also holds the other four context pages: architecture design, UI guidelines, current focus, and decisions and consistency. `Examples/` holds one file per project, with how each uses the kit's pieces.
+Today the repository holds its own documents in `Docs/`, the workflow core (the context index, the `Development_Workflow`, `Working_Agreements` and `DataFlow` pages, and the stale-docs list template), and the agents and skills: the red-team and historian pages, the guardrails review and UX design pages, and a copy-ready definition for each in `Templates/`. It also holds the other four context pages: architecture design, UI guidelines, current focus, and decisions and consistency. `Examples/` holds one file per project, with how each uses the pieces.
 
 Details are in the [Project Roadmap](Project_Roadmap.md).
 
@@ -117,8 +117,8 @@ Details are in the [Project Roadmap](Project_Roadmap.md).
 
 | File | Purpose |
 |---|---|
-| [Project_Vision.md](Project_Vision.md) | What the kit is, what the approach is, and what it is not |
-| [PRD.md](PRD.md) | What the kit contains and what it must do |
+| [Project_Vision.md](Project_Vision.md) | What the repository is, what the approach is, and what it is not |
+| [PRD.md](PRD.md) | What the repository contains and what it must do |
 | [Project_Roadmap.md](Project_Roadmap.md) | Phases and their status |
 
 ---

@@ -24,7 +24,7 @@ Stays out:
 
 ## The agreements
 
-These are the kit's agreements, written as rules a new session can follow. Change them to fit your project in the skeleton below.
+These are this workflow's agreements, written as rules a new session can follow. Change them to fit your project in the skeleton below.
 
 ### Who decides
 

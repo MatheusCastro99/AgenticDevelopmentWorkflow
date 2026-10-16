@@ -6,7 +6,7 @@ It documents the `guardrails-review` skill: the project's own review checklist.
 
 A reviewer with no project context reviews against generic taste. This skill gives the reviewer the project's rules to check, the mistakes that have already happened, and the limits of what can be verified from a session. It is the one checklist for reviewing a change, weighing a design, and deciding what to do with tech debt.
 
-Both source projects call this skill `review-guardrails`. The kit names it `guardrails-review`.
+Both source projects call this skill `review-guardrails`. The template names it `guardrails-review`.
 
 ## What goes in it, and what stays out
 
@@ -62,7 +62,7 @@ It runs in two ways:
 | Rules not in force yet | The gap is not a defect unless the change claims to close it | The same, and a change that moves the code further from the rule is a finding |
 | Traps | Listed as known regression traps | Each one was reproduced against the running API before it was listed |
 
-The first row follows from what each project has: BabyBuddyHelper keeps a context index and a current-state page, and InvoiceMe has neither. The template loads the three documents the kit describes, and keeps both sentences about rules not in force yet.
+The first row follows from what each project has: BabyBuddyHelper keeps a context index and a current-state page, and InvoiceMe has neither. The template loads the three documents this repository describes, and keeps both sentences about rules not in force yet.
 
 Both source skills keep the traps as a subsection of the project checks, so their severity scale and output are sections 4 and 5. The template gives the traps their own section, which makes them 5 and 6.
 

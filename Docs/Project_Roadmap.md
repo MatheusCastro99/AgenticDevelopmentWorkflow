@@ -47,7 +47,7 @@
 
 ## Phase 1: Customizable harness configuration and workflow (#14): PLANNED
 
-- A directional change: the kit is reframed as a customizable harness configuration and workflow, which each project or developer adapts as they see fit
+- A directional change: the repository is reframed as a customizable harness configuration and workflow, which each project or developer adapts as they see fit
 
 ## Phase 2: Onboarding (#15): PLANNED
 
@@ -64,7 +64,7 @@
 
 Nothing is scheduled. Each of these was left out of the epics on purpose (at least for now):
 
-- A script that installs the kit into a project
+- A script that installs the harness configuration into a project
 - A Claude pull request review workflow for this repository
 
 The roadmap is directional; planned items should not be read as available today.

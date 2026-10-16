@@ -57,10 +57,10 @@ Subagent invocation
 
 Content rules
 -------------
-- Every `Harness_Config/` page has the same shape: what the file is for; what goes in it and what stays out; a skeleton to fill in; links to the matching excerpts in `Examples/`.
+- Every `Harness_Config/` page has the same shape: what the file is for; what goes in it and what stays out; a skeleton to fill in; links to the matching examples in `Examples/`.
 - Describe what the source projects actually do. Check a claim against the source repository before writing it; do not describe a practice neither project follows.
-- Where the two projects differ, show both and say why.
-- An excerpt names its source file and the commit it was taken from.
+- Where the two projects differ, show both; do not justify the differences.
+- An example links to its source file at a named commit.
 - A template definition must run in Claude Code once its placeholders are filled. List every placeholder at the top of the template.
 - Link only to files that exist. A path that arrives in a later phase is written as plain text until then.
 - Keep the owner's wording. Do not rewrite sentences the owner edited; report a typo instead of fixing it unasked.
@@ -92,3 +92,4 @@ Contacting the user
 Change log
 ----------
 - 2026-10-13 (#2): Initial CLAUDE.md added.
+- 2026-10-16 (#14): Repository renamed to HarnessConfigAndWorkflow and `AI_Env/` to `Harness_Config/`; content rules aligned with the PRD.

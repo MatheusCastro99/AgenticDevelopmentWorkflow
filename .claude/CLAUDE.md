@@ -9,7 +9,7 @@ Repository facts
 - Repo root: the directory containing `LICENSE`
 - GitHub: MatheusCastro99/AgenticDevelopmentWorkflow (public)
 - Content: Markdown, with Mermaid for diagrams. There is no code to build or compile.
-- `Docs/` holds this repository's own documents. `AI_Env/`, `Templates/` and `Examples/` are the kit.
+- `Docs/` holds this repository's own documents. `Harness_Config/`, `Templates/` and `Examples/` are the kit.
 - Source projects the kit draws from (both public): MatheusCastro99/BabyBuddyHelper (.NET MAUI) and MatheusCastro99/InvoiceMe (MERN).
 
 Authoritative docs (always load before making edits)
@@ -18,8 +18,8 @@ When planning or making changes, the agent MUST read these files first and follo
 - Docs/README.md
 - Docs/Project_Vision.md
 - Docs/Project_Roadmap.md
-- AI_Env/AI_CONTEXT.md
-- AI_Env/Context/*
+- Harness_Config/AI_CONTEXT.md
+- Harness_Config/Context/*
 - The GitHub issue being worked and its comments (`gh issue view <n> --comments`); the owner records decided scope there.
 
 Workflow
@@ -43,7 +43,7 @@ Do not jump a stage. A scope change during implementation goes into the issue be
 
 AI tooling (Claude Code)
 ------------------------
-Runnable definitions live in `.claude/agents/` and `.claude/skills/` (gitignored, maintainer's personal tooling). Copy-ready versions for readers live in `Templates/`, and their documentation in `AI_Env/`.
+Runnable definitions live in `.claude/agents/` and `.claude/skills/` (gitignored, maintainer's personal tooling). Copy-ready versions for readers live in `Templates/`, and their documentation in `Harness_Config/`.
 
 Subagents:
 - red-team — independent adversarial reviewer, read-only. Checks a finished change for claims the source projects do not support, private details, leftover placeholders, broken links and contradictions between pages.
@@ -57,7 +57,7 @@ Subagent invocation
 
 Content rules
 -------------
-- Every `AI_Env/` page has the same shape: what the file is for; what goes in it and what stays out; a skeleton to fill in; links to the matching excerpts in `Examples/`.
+- Every `Harness_Config/` page has the same shape: what the file is for; what goes in it and what stays out; a skeleton to fill in; links to the matching excerpts in `Examples/`.
 - Describe what the source projects actually do. Check a claim against the source repository before writing it; do not describe a practice neither project follows.
 - Where the two projects differ, show both and say why.
 - An excerpt names its source file and the commit it was taken from.

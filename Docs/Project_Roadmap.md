@@ -38,7 +38,7 @@
 ## Phase 6: Examples (#7): CONCLUDED
 
 - One examples file per project, for BabyBuddyHelper and InvoiceMe
-- Links from every `AI_Env/` page to its examples
+- Links from every `Harness_Config/` page to its examples
 - README pass and close-out of the epic
 
 ## Epic 2: [#11](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/11)

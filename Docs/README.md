@@ -38,10 +38,10 @@ The full version is in [Project Vision](Project_Vision.md).
 
 | Piece | Where | What it gives you |
 |---|---|---|
-| Context documents | `AI_Env/Context/` | What each document is for, what goes in it, and a skeleton |
-| Context index | `AI_Env/AI_CONTEXT.md` | The page an agent loads first |
-| Agents | `AI_Env/Agents/` | Why each subagent exists, when to use it, how it is configured |
-| Skills | `AI_Env/Skills/` | What each skill checks and when to use it |
+| Context documents | `Harness_Config/Context/` | What each document is for, what goes in it, and a skeleton |
+| Context index | `Harness_Config/AI_CONTEXT.md` | The page an agent loads first |
+| Agents | `Harness_Config/Agents/` | Why each subagent exists, when to use it, how it is configured |
+| Skills | `Harness_Config/Skills/` | What each skill checks and when to use it |
 | Templates | `Templates/` | Copy-ready agent and skill definitions, and the stale-docs list |
 | Examples | `Examples/` | The same pieces as filled in on BabyBuddyHelper and InvoiceMe |
 
@@ -63,7 +63,7 @@ AgenticDevelopmentWorkflow/
 │   ├── Project_Roadmap.md
 │   └── PRD.md
 │
-├── AI_Env/
+├── Harness_Config/
 │   ├── AI_CONTEXT.md
 │   ├── Context/
 │   │   ├── Architecture_Design.md
@@ -92,7 +92,7 @@ AgenticDevelopmentWorkflow/
 └── LICENSE
 ```
 
-`Docs/` holds this repository's own documents. `AI_Env/`, `Templates/` and `Examples/` are the kit.
+`Docs/` holds this repository's own documents. `Harness_Config/`, `Templates/` and `Examples/` are the kit.
 
 Runnable agent and skill definitions in `.claude/agents` and `.claude/skills` are personal tooling and are not tracked, here or in the two source projects. `Templates/` holds the versions meant to be copied.
 

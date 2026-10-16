@@ -21,14 +21,14 @@ Each piece comes with a fill-in skeleton and with real examples from two project
 
 | Piece | Where | What it gives the reader |
 |---|---|---|
-| Context documents | `AI_Env/Context/` | What each document is for, what goes in it, and a skeleton |
-| Context index | `AI_Env/AI_CONTEXT.md` | The page an agent loads first |
-| Agents | `AI_Env/Agents/` | Why each subagent exists, when to use it, how it is configured |
-| Skills | `AI_Env/Skills/` | What each skill checks and when to use it |
+| Context documents | `Harness_Config/Context/` | What each document is for, what goes in it, and a skeleton |
+| Context index | `Harness_Config/AI_CONTEXT.md` | The page an agent loads first |
+| Agents | `Harness_Config/Agents/` | Why each subagent exists, when to use it, how it is configured |
+| Skills | `Harness_Config/Skills/` | What each skill checks and when to use it |
 | Templates | `Templates/` | Copy-ready agent and skill definitions, and the stale-docs list |
 | Examples | `Examples/` | The same pieces as filled in on BabyBuddyHelper and InvoiceMe |
 
-Every page under `AI_Env/` has the same shape:
+Every page under `Harness_Config/` has the same shape:
 
 1. What the file is for
 2. What goes in it, and what stays out
@@ -51,7 +51,7 @@ AgenticDevelopmentWorkflow/
 │   ├── Project_Vision.md - What the kit is and is not
 │   ├── Project_Roadmap.md - Phases and their status
 │   └── PRD.md - This document
-├── AI_Env/
+├── Harness_Config/
 │   ├── AI_CONTEXT.md - Index of the context documents
 │   ├── Context/
 │   │   ├── Architecture_Design.md - Structure and key files of a project
@@ -78,7 +78,7 @@ AgenticDevelopmentWorkflow/
 └── .gitignore
 ```
 
-`Docs/` holds this repository's own documents. `AI_Env/`, `Templates/` and `Examples/` are the kit.
+`Docs/` holds this repository's own documents. `Harness_Config/`, `Templates/` and `Examples/` are the kit.
 
 ## Requirements
 

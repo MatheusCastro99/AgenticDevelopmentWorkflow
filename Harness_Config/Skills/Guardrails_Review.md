@@ -62,7 +62,7 @@ It runs in two ways:
 | Rules not in force yet | The gap is not a defect unless the change claims to close it | The same, and a change that moves the code further from the rule is a finding |
 | Traps | Listed as known regression traps | Each one was reproduced against the running API before it was listed |
 
-The template loads the three documents this repository describes, and keeps both sentences about rules not in force yet.
+On the first row the template follows BabyBuddyHelper: it loads the decisions file, the context index and the current-focus page. It keeps both sentences about rules not in force yet.
 
 Both source skills keep the traps as a subsection of the project checks, so their severity scale and output are sections 4 and 5. The template gives the traps their own section, which makes them 5 and 6.
 

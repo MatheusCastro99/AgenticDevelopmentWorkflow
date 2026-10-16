@@ -27,7 +27,7 @@ This repository pulls it out into one place, so that:
 
 ## What this repository is
 
-- A customizable harness configuration: each piece explains what it is for and gives a skeleton to fill in.
+- A customizable harness configuration and workflow: each piece explains what it is for and gives a skeleton to fill in.
 - A set of real examples: the same piece as it was filled in on two projects.
 - Built with the workflow it documents.
 

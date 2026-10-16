@@ -1,6 +1,6 @@
 # BabyBuddyHelper examples
 
-How [BabyBuddyHelper](https://github.com/MatheusCastro99/BabyBuddyHelper), a .NET MAUI parenting companion, uses each piece of the kit. Every link points to commit [`2c6974a`](https://github.com/MatheusCastro99/BabyBuddyHelper/tree/2c6974a43212ec72071d4d653c5a510ca6cc2662).
+How [BabyBuddyHelper](https://github.com/MatheusCastro99/BabyBuddyHelper), a .NET MAUI parenting companion, uses the kit's pieces. Each section links to the project's file at commit [`2c6974a`](https://github.com/MatheusCastro99/BabyBuddyHelper/tree/2c6974a43212ec72071d4d653c5a510ca6cc2662).
 
 ## AI Context
 

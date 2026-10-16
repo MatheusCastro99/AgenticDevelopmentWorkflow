@@ -19,12 +19,12 @@ Stays out:
 
 - The stages of an issue. They are in [Development Workflow](Development_Workflow.md).
 - Technical rules about the code or content (standing rules, ADRs). They are in [Decisions_Consistency.md](Decisions_Consistency.md).
-- How a subagent is configured. That is in `AI_Env/Agents/`.
+- How a subagent is configured. That is in `Harness_Config/Agents/`.
 - Personal notes about the owner. The page is public project documentation.
 
 ## The agreements
 
-These are the kit's agreements, written as rules a new session can follow. Change them to fit your project in the skeleton below.
+These are this workflow's agreements, written as rules a new session can follow. Change them to fit your project in the skeleton below.
 
 ### Who decides
 

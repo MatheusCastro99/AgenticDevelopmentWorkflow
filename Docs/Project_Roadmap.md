@@ -1,6 +1,6 @@
 # Project Roadmap
 
-## Epic 1: [#1](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/1)
+## Epic 1: [#1](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/1)
 
 - One issue and one pull request per phase, worked in this order.
 - Phases 3 and 4 were delivered together in one pull request, because the red-team template preloads the guardrails skill.
@@ -38,23 +38,27 @@
 ## Phase 6: Examples (#7): CONCLUDED
 
 - One examples file per project, for BabyBuddyHelper and InvoiceMe
-- Links from every `AI_Env/` page to its examples
+- Links from every `Harness_Config/` page to its examples
 - README pass and close-out of the epic
 
-## Epic 2: [#11](https://github.com/MatheusCastro99/AgenticDevelopmentWorkflow/issues/11)
+## Epic 2: [#11](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/11)
 
 - Starts after epic 1 closes. One issue and one pull request per phase, worked in this order.
 
-## Phase 1: Customizable harness configuration and workflow (#14): PLANNED
+## Phase 1: Customizable harness configuration and workflow (#14): CONCLUDED
 
-- A directional change: the kit is reframed as a customizable harness configuration and workflow, which each project or developer adapts as they see fit
+- A directional change: the repository is reframed as a customizable harness configuration and workflow, which each project or developer adapts as they see fit
 
-## Phase 2: Onboarding (#15): PLANNED
+## Phase 2: Workflow tuning (#19): PLANNED
+
+- The approval gates redesigned, loops added, stages 7 and 8 condensed into one, and the workflow diagram redrawn
+
+## Phase 3: Onboarding (#15): PLANNED
 
 - A skill that surveys a project through a read-only subagent and drafts its pages with the developer, starting from the smallest set the project needs
 - Both as copy-ready definitions in `Templates/`, explained in a "Get Started" section of the README
 
-## Phase 3: Validation (#16): PLANNED
+## Phase 4: Validation (#16): PLANNED
 
 - A run of the onboarding skill on a snapshot of InvoiceMe with its documentation removed, compared with the documents written by hand
 
@@ -64,7 +68,7 @@
 
 Nothing is scheduled. Each of these was left out of the epics on purpose (at least for now):
 
-- A script that installs the kit into a project
+- A script that installs the harness configuration into a project
 - A Claude pull request review workflow for this repository
 
 The roadmap is directional; planned items should not be read as available today.

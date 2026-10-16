@@ -2,7 +2,7 @@
 
 ## Summary
 
-AgenticDevelopmentWorkflow is a kit that documents how I work with an AI coding agent on a real project:
+HarnessConfigAndWorkflow is a customizable harness configuration and workflow that documents how I work with an AI coding agent on a real project:
 the context it reads, the rules it follows, the subagents and skills it uses, and the steps every issue goes through.
 
 ---
@@ -27,7 +27,7 @@ This repository pulls it out into one place, so that:
 
 ## What this repository is
 
-- A template kit: each piece explains what it is for and gives a skeleton to fill in.
+- A customizable harness configuration and workflow: each piece explains what it is for and gives a skeleton to fill in.
 - A set of real examples: the same piece as it was filled in on two projects.
 - Built with the workflow it documents.
 
@@ -35,7 +35,7 @@ This repository pulls it out into one place, so that:
 
 - A framework, a library or a tool to install.
 - A claim that this is the only way, or the best way, to work with an agent.
-- Tied to one stack. The examples are .NET MAUI and MERN; the kit is neither.
+- Tied to one stack. The examples are .NET MAUI and MERN; this repository is neither.
 - A replacement for the owner's judgment. Agents and skills recommend; the developer makes every call.
 
 ## Target feeling

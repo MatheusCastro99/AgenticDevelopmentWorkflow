@@ -1,6 +1,6 @@
 # InvoiceMe examples
 
-How [InvoiceMe](https://github.com/MatheusCastro99/InvoiceMe), a MERN app for managing customers and invoices, uses the kit's pieces. Each section links to the project's file at commit [`c51f217`](https://github.com/MatheusCastro99/InvoiceMe/tree/c51f217c19c6df22da102af884f276fafde011d8).
+How [InvoiceMe](https://github.com/MatheusCastro99/InvoiceMe), a MERN app for managing customers and invoices, uses each piece of the harness configuration. Each section links to the project's file at commit [`c51f217`](https://github.com/MatheusCastro99/InvoiceMe/tree/c51f217c19c6df22da102af884f276fafde011d8).
 
 ## Architecture Design
 

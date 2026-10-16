@@ -1,8 +1,8 @@
-# Product Requirements Document: AgenticDevelopmentWorkflow
+# Product Requirements Document: HarnessConfigAndWorkflow
 
 ## Purpose
 
-AgenticDevelopmentWorkflow is a documentation kit for agentic assisted development. It is a guide that can be used for any platform that supports its requirements (parallel agents, context management, skills).
+HarnessConfigAndWorkflow is a customizable harness configuration and workflow for agentic assisted development. It can be used for any platform that supports its requirements (parallel agents, context management, skills).
 It describes the environment an AI coding agent works in on a project (context documents, subagents, skills) and the workflow every issue follows, from gathering information to merge.
 Each piece comes with a fill-in skeleton and with real examples from two projects: BabyBuddyHelper (.NET MAUI) and InvoiceMe (MERN).
 
@@ -17,18 +17,18 @@ Each piece comes with a fill-in skeleton and with real examples from two project
 - **Code**: none to build or compile
 - **CI**: GitHub Actions, link check only
 
-## What the kit contains
+## What it contains
 
 | Piece | Where | What it gives the reader |
 |---|---|---|
-| Context documents | `AI_Env/Context/` | What each document is for, what goes in it, and a skeleton |
-| Context index | `AI_Env/AI_CONTEXT.md` | The page an agent loads first |
-| Agents | `AI_Env/Agents/` | Why each subagent exists, when to use it, how it is configured |
-| Skills | `AI_Env/Skills/` | What each skill checks and when to use it |
+| Context documents | `Harness_Config/Context/` | What each document is for, what goes in it, and a skeleton |
+| Context index | `Harness_Config/AI_CONTEXT.md` | The page an agent loads first |
+| Agents | `Harness_Config/Agents/` | Why each subagent exists, when to use it, how it is configured |
+| Skills | `Harness_Config/Skills/` | What each skill checks and when to use it |
 | Templates | `Templates/` | Copy-ready agent and skill definitions, and the stale-docs list |
 | Examples | `Examples/` | The same pieces as filled in on BabyBuddyHelper and InvoiceMe |
 
-Every page under `AI_Env/` has the same shape:
+Every page under `Harness_Config/` has the same shape:
 
 1. What the file is for
 2. What goes in it, and what stays out
@@ -38,7 +38,7 @@ Every page under `AI_Env/` has the same shape:
 ## Repository Structure
 
 ```
-AgenticDevelopmentWorkflow/
+HarnessConfigAndWorkflow/
 ├── .claude/
 │   ├── CLAUDE.md - Guidance for Claude Code in this repository (tracked)
 │   ├── agents/ - This repository's own runnable agents (gitignored)
@@ -48,10 +48,10 @@ AgenticDevelopmentWorkflow/
 │       └── link-check.yml - Link check on pull requests and pushes to main
 ├── Docs/
 │   ├── README.md - Repository overview
-│   ├── Project_Vision.md - What the kit is and is not
+│   ├── Project_Vision.md - What the repository is and is not
 │   ├── Project_Roadmap.md - Phases and their status
 │   └── PRD.md - This document
-├── AI_Env/
+├── Harness_Config/
 │   ├── AI_CONTEXT.md - Index of the context documents
 │   ├── Context/
 │   │   ├── Architecture_Design.md - Structure and key files of a project
@@ -78,21 +78,21 @@ AgenticDevelopmentWorkflow/
 └── .gitignore
 ```
 
-`Docs/` holds this repository's own documents. `AI_Env/`, `Templates/` and `Examples/` are the kit.
+`Docs/` holds this repository's own documents. `Harness_Config/`, `Templates/` and `Examples/` are the harness configuration and workflow.
 
 ## Requirements
 
 - A reader can fill in any skeleton for a new project without reading either source repository.
 - A template definition runs in Claude Code once its placeholders are filled, with no other edits.
 - Every example names the file and commit it came from.
-- The kit shows how each project uses a piece, without justifying the differences.
+- This repository shows how each project uses a piece, without justifying the differences.
 - Nothing private is published: no secrets, no personal notes, no unfixed security findings.
 - Every link in the repository resolves.
 
 ## Out of Scope
 
 - Tooling for editors other than Claude Code
-- A script or generator that installs the kit into a project
+- A script or generator that installs the harness configuration into a project
 - Keeping the examples in step with later changes to the source repositories
 
 ## External Resources

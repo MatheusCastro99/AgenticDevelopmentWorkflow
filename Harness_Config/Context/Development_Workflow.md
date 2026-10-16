@@ -18,7 +18,7 @@ Goes in:
 Stays out:
 
 - Who decides and how findings are triaged. That is in [Working Agreements](Working_Agreements.md).
-- How each subagent is configured and briefed. That is in `AI_Env/Agents/`.
+- How each subagent is configured and briefed. That is in `Harness_Config/Agents/`.
 - Build, test and run commands. They belong in the agent guidance file or the README.
 - The plan for any one issue. That lives in the issue.
 

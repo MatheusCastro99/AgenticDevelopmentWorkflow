@@ -88,7 +88,7 @@ The report must match the diff exactly, because the owner reviews one against th
 
 ## How the two projects differ
 
-InvoiceMe's historian was adapted from BabyBuddyHelper's. Its documentation records the first three differences below as the owner's tuning for that project.
+InvoiceMe's historian was adapted from BabyBuddyHelper's.
 
 | | BabyBuddyHelper | InvoiceMe |
 |---|---|---|

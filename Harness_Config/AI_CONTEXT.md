@@ -23,13 +23,13 @@ Stays out:
 
 ## The index
 
-This is the index of this kit.
+This is the index of this repository.
 
 ### This repository
 
 - [README](../Docs/README.md): overview and status
-- [Project Vision](../Docs/Project_Vision.md): what the kit is and is not
-- [PRD](../Docs/PRD.md): what the kit contains and what it must do
+- [Project Vision](../Docs/Project_Vision.md): what the repository is and is not
+- [PRD](../Docs/PRD.md): what the repository contains and what it must do
 - [Project Roadmap](../Docs/Project_Roadmap.md): phases and their status
 
 ### Context documents
@@ -58,7 +58,7 @@ This is the index of this kit.
 - [Stale-docs list](../Templates/stale-docs.md): the running list a change keeps for the documentation pass
 - Copy-ready agent definitions: [red-team](../Templates/agents/red-team.md), [historian](../Templates/agents/historian.md)
 - Copy-ready skills: [guardrails-review](../Templates/skills/guardrails-review/SKILL.md), [ux-design](../Templates/skills/ux-design/SKILL.md)
-- Examples: [BabyBuddyHelper](../Examples/BabyBuddyHelper-examples.md), [InvoiceMe](../Examples/InvoiceMe-examples.md): how each project uses the kit's pieces
+- Examples: [BabyBuddyHelper](../Examples/BabyBuddyHelper-examples.md), [InvoiceMe](../Examples/InvoiceMe-examples.md): how each project uses the pieces
 
 ## Skeleton
 

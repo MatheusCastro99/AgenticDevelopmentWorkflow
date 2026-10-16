@@ -45,16 +45,20 @@
 
 - Starts after epic 1 closes. One issue and one pull request per phase, worked in this order.
 
-## Phase 1: Customizable harness configuration and workflow (#14): PLANNED
+## Phase 1: Customizable harness configuration and workflow (#14): CONCLUDED
 
 - A directional change: the repository is reframed as a customizable harness configuration and workflow, which each project or developer adapts as they see fit
 
-## Phase 2: Onboarding (#15): PLANNED
+## Phase 2: Workflow tuning (#19): PLANNED
+
+- The approval gates redesigned, loops added, stages 7 and 8 condensed into one, and the workflow diagram redrawn
+
+## Phase 3: Onboarding (#15): PLANNED
 
 - A skill that surveys a project through a read-only subagent and drafts its pages with the developer, starting from the smallest set the project needs
 - Both as copy-ready definitions in `Templates/`, explained in a "Get Started" section of the README
 
-## Phase 3: Validation (#16): PLANNED
+## Phase 4: Validation (#16): PLANNED
 
 - A run of the onboarding skill on a snapshot of InvoiceMe with its documentation removed, compared with the documents written by hand
 

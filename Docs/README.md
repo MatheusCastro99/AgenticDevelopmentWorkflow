@@ -100,14 +100,15 @@ Runnable agent and skill definitions in `.claude/agents` and `.claude/skills` ar
 
 ## Status
 
-| Phase | Issue | Status |
-|---|---|---|
-| 1. Planning and scaffold | [#2](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/2) | Done |
-| 2. Workflow core | [#3](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/3) | Done |
-| 3. Agents | [#4](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/4) | Done |
-| 4. Skills | [#5](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/5) | Done |
-| 5. Context templates | [#6](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/6) | Done |
-| 6. Examples | [#7](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/7) | Done |
+| Epic | Phase | Issue | Status |
+|---|---|---|---|
+| 1 | 1. Planning and scaffold | [#2](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/2) | Done |
+| 1 | 2. Workflow core | [#3](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/3) | Done |
+| 1 | 3. Agents | [#4](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/4) | Done |
+| 1 | 4. Skills | [#5](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/5) | Done |
+| 1 | 5. Context templates | [#6](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/6) | Done |
+| 1 | 6. Examples | [#7](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/7) | Done |
+| 2 | 1. Customizable harness configuration and workflow | [#14](https://github.com/MatheusCastro99/HarnessConfigAndWorkflow/issues/14) | Done |
 
 Today the repository holds its own documents in `Docs/`, the workflow core (the context index, the `Development_Workflow`, `Working_Agreements` and `DataFlow` pages, and the stale-docs list template), and the agents and skills: the red-team and historian pages, the guardrails review and UX design pages, and a copy-ready definition for each in `Templates/`. It also holds the other four context pages: architecture design, UI guidelines, current focus, and decisions and consistency. `Examples/` holds one file per project, with how each uses the pieces.
 
